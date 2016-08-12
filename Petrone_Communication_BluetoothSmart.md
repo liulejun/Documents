@@ -93,10 +93,10 @@ enum DataType
 
 3.1.1. CommandBase
  PETRONE의 설정을 변경하거나 데이터를 요청할 때 사용하는 Command 계통 명령의 기본 구조체입니다. Command, Command2, Command3, LedModeCommand, LedModeCommandIr, LedEventCommand, LedEventCommandIr 구조체에서 사용하고 있습니다.
- ```C
+```C
  	struct CommandBase
 	{
 		u8	commandType;	///< 명령 타입
-		u8	option;		///< 명령에 대한 옵션(System.h에 정의한 값을 사용)
+		u8	option;			///< 명령에 대한 옵션(System.h에 정의한 값을 사용)
 	};
 ```
