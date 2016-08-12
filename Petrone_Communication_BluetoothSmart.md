@@ -91,7 +91,8 @@ enum DataType
 ### 3.1. Base
  데이터 전송 시 그대로 전달되지는 않으나 다른 구조체의 일부분으로 포함되는 구조체들을 먼저 소개합니다.
 
-3.1.1. CommandBase
+#### 3.1.1. CommandBase
+
  PETRONE의 설정을 변경하거나 데이터를 요청할 때 사용하는 Command 계통 명령의 기본 구조체입니다. Command, Command2, Command3, LedModeCommand, LedModeCommandIr, LedEventCommand, LedEventCommandIr 구조체에서 사용하고 있습니다.
 ```C
  	struct CommandBase
@@ -100,3 +101,39 @@ enum DataType
 		u8	option;			///< 명령에 대한 옵션(System.h에 정의한 값을 사용)
 	};
 ```
+
+#### 3.1.1.1. commandType
+ commandType 변수에는 CommandType 열거형을 사용합니다.
+ ```C
+ enum CommandType
+	{
+		None = 0,					///< 이벤트 없음
+				
+		// 설정
+		ModePetrone = 0x10,			///< 페트론 동작 모드 전환
+				
+		// 제어
+		Coordinate = 0x20,			///< 방위 기준 변경
+		Trim,						///< 트림 변경
+		FlightEvent,				///< 비행 이벤트 실행
+		DriveEvent,					///< 주행 이벤트 실행
+		Stop,						///< 정지
+		
+		ResetHeading = 0x50,		///< 방향을 리셋(앱솔루트 모드 일 때 현재 heading을 0도로 변경)
+		ClearGyroBiasAndTrim,		///< 자이로 바이어스와 트림 설정 초기화
+		ClearTrim,					///< 트림 설정 초기화
+				
+		// 통신[Bluetooth]
+		PairingActivate = 0x80,		///< 페어링 활성화
+		PairingDeactivate,			///< 페어링 비활성화
+		AdvertisingStart,			///< 장치를 검색 가능한 상태로 변경
+		AdvertisingStop,			///< 장치를 검색 불가능한 상태로 변경
+		TerminateConnection,		///< 연결 종료
+		ClearBondList,				///< 본딩된 장치 리스트 제거
+				
+		// 요청
+		Request = 0x90,				///< 지정한 타입의 데이터 요청
+		
+		EndOfType
+	};
+ 
