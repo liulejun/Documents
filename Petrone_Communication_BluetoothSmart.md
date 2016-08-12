@@ -76,7 +76,7 @@ enum DataType
 ```
 
 ## 3. 데이터 구조체
-
+ PETRONE의 데이터 송수신에는 typedef 한 변수 형식을 사용하고 있습니다. 주로 사용하는 변수들의 형식은 다음과 같습니다.
 ```C
 	typedef	int32_t 	s32;
 	typedef	int16_t		s16;
@@ -85,4 +85,18 @@ enum DataType
 	typedef	uint32_t	u32;
 	typedef	uint16_t	u16;
 	typedef	uint8_t		u8;
+```
+ 데이터 송수신에 사용하는 변수는 실제로는 지정된 열거형이 있는 경우라도 데이터 길이를 명확하게 표시하고자 변수형을 u8 또는 u16으로 지정하고 있습니다.
+
+### 3.1. Base
+ 데이터 전송 시 그대로 전달되지는 않으나 다른 구조체의 일부분으로 포함되는 구조체들을 먼저 소개합니다.
+
+3.1.1. CommandBase
+ PETRONE의 설정을 변경하거나 데이터를 요청할 때 사용하는 Command 계통 명령의 기본 구조체입니다. Command, Command2, Command3, LedModeCommand, LedModeCommandIr, LedEventCommand, LedEventCommandIr 구조체에서 사용하고 있습니다.
+ ```C
+ 	struct CommandBase
+	{
+		u8	commandType;	///< 명령 타입
+		u8	option;		///< 명령에 대한 옵션(System.h에 정의한 값을 사용)
+	};
 ```
