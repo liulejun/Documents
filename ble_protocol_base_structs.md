@@ -21,6 +21,7 @@ namespace Protocol
     };
 }
 ```
+[commandType](ble_protocol_definitions.md#CommandType)
 
 
 
