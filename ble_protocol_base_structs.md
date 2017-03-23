@@ -1,4 +1,4 @@
-***PETRONE / BLE / Protocol / BaseStructures***<br>
+***PETRONE / BLE / Protocol / BaseStructs***<br>
 Modified : 2017.03.23
 
 ---
@@ -21,7 +21,8 @@ namespace Protocol
     };
 }
 ```
-- [commandType](ble_protocol_definitions.md#CommandType) : Protocol::CommandType::Type
+- commandType : [Protocol::CommandType::Type](ble_protocol_definitions.md#CommandType)
+- option : [Protocol::CommandType::Type](ble_protocol_definitions.md#CommandType)
 
 
 **LedModeBase**
