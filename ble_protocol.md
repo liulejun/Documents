@@ -1,5 +1,7 @@
 # PETRONE
-***BLE / Protocol***<br>
+
+***BLE / Protocol***
+
 Modified : 2017.03.23
 
 ---
