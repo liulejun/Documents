@@ -20,7 +20,7 @@ namespace Protocol
             None = 0,                       ///< 이벤트 없음
             
             // 설정
-            ModePetrone = 0x10,             ///< 페트론 동작 모드 전환
+            ModeVehicle = 0x10,             ///< 동작 모드 전환
             
             // 제어
             Coordinate = 0x20,              ///< 방위 기준 변경
@@ -49,6 +49,61 @@ namespace Protocol
     }
 }
 ```
+
+
+## <a name="ModeVehicle">System::ModeVehicle::Type</a>
+CommandBase 구조체에서 option 변수에 사용합니다.
+
+```cpp
+namespace System
+{
+    namespace ModeVehicle
+    {
+        enum Type
+        {
+            None = 0,           ///< 없음
+            
+            Flight = 0x10,      ///< 비행(가드 포함)
+            FlightNoGuard,      ///< 비행(가드 없음)
+            FlightFPV,          ///< 비행(FPV)
+            
+            Drive = 0x20,       ///< 주행
+            DriveFPV,           ///< 주행(FPV)
+            
+            Test = 0x30,        ///< 테스트
+            
+            Fan = 0x40,         ///< 선풍기 모드
+            
+            EndOfType
+        };
+    }
+    
+}
+```
+
+
+## <a name="Coordinate">System::Coordinate::Type</a>
+CommandBase 구조체에서 option 변수에 사용합니다.
+
+```cpp
+namespace System
+{
+    namespace Coordinate
+    {
+        enum Type
+        {
+            None = 0,           ///< 없음
+            
+            World,              ///< 고정 좌표계(Absolute)
+            Local,              ///< 상대 좌표계(일반)
+            
+            EndOfType
+        };
+    }
+}
+```
+
+
 
 
 ## <a name="LightMode">Light::Mode::Type</a>
