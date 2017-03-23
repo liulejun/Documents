@@ -1,5 +1,4 @@
-# PETRONE
-***BLE / Protocol***<br>
+***PETRONE / BLE / Protocol / Definitions***<br>
 Modified : 2017.03.23
 
 ---
@@ -8,9 +7,9 @@ Modified : 2017.03.23
 
 ---
 
-<a name="commandtype">**CommandType**</a>
+<a name="CommandType">**CommandType**</a>
 -----------------
-**Protocol::CommandType**<br>
+**Protocol::CommandType::Type**<br>
 CommandBase 구조체에서 commandType 변수에 사용하는 값입니다.
 ```cpp
 namespace Protocol
@@ -45,6 +44,42 @@ namespace Protocol
             
             // 요청
             Request = 0x90,                 ///< 지정한 타입의 데이터 요청
+            
+            EndOfType
+        };
+    }
+}
+```
+
+
+<a name="LightMode">**LightMode**</a>
+-----------------
+**Light::Mode::Type**<br>
+LED 모드 또는 이벤트 명령 시 동작 모드를 지정할 때 사용합니다.
+```cpp
+namespace Light
+{
+    namespace Mode
+    {
+        enum Type
+        {
+            None,
+            
+            EyeNone = 0x10,
+            EyeHold,            // 지정한 색상을 계속 켬
+            EyeMix,             // 순차적으로 LED 색 변경
+            EyeFlicker,         // 깜빡임         
+            EyeFlickerDouble,   // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+            EyeDimming,         // 밝기 제어하여 천천히 깜빡임
+            
+            ArmNone = 0x40,     
+            ArmHold,            // 지정한 색상을 계속 켬
+            ArmMix,             // 순차적으로 LED 색 변경
+            ArmFlicker,         // 깜빡임         
+            ArmFlickerDouble,   // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+            ArmDimming,         // 밝기 제어하여 천천히 깜빡임
+            ArmFlow,            // 앞에서 뒤로 흐름           
+            ArmFlowReverse,     // 뒤에서 앞으로 흐름 
             
             EndOfType
         };
