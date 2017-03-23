@@ -40,6 +40,7 @@ namespace Protocol
 }
 ```
 - [mode](ble_protocol_definitions.md#LightMode) : Light::Mode::Type
+- [color](ble_protocol_definitions.md#LightColors) : Light::Colors::Type
 
 
 ---
