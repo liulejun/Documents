@@ -38,7 +38,7 @@ namespace Protocol
 
 
 ## <a name="Control">Protocol::Control</a>
-PETRONE을 조종하기 할 때 사용하는 입력값입니다.
+PETRONE을 조종할 때 사용하는 입력값입니다.
 ```cpp
 namespace Protocol
 {
@@ -52,7 +52,7 @@ namespace Protocol
 }
 ```
 
-Control의 입력 값 범위는 다음과 같습니다. Drive 모드에서는 **throttle**(전후)과 **roll**(좌우)만 사용합니다.
+Control 입력 값의 범위는 다음과 같습니다. Drive 모드에서는 **throttle**(전후)과 **roll**(좌우)만 사용합니다.
 
 
 |이름      | 형식 | 범위        | 방향      | 음수 값(-) | 양수 값(+)    |
