@@ -31,7 +31,7 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
     </tr>
     <tr>
         <td>DataType</td>
-        <td colspan="4">Data</Td>
+        <td colspan="4">Data</td>
     </tr>
 </table>
 
