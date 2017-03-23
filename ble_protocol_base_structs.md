@@ -21,7 +21,7 @@ namespace Protocol
 }
 ```
 - commandType : [Protocol::CommandType::Type](ble_protocol_definitions.md#CommandType)
-- option : [System::ModeVehicle::Type](ble_protocol_definitions.md#ModeVehicle), [System::Coordinate::Type](ble_protocol_definitions.md#Coordinate), 
+- option : [System::ModeVehicle::Type](ble_protocol_definitions.md#ModeVehicle), [System::Coordinate::Type](ble_protocol_definitions.md#Coordinate), [System::Trim::Type](ble_protocol_definitions.md#Trim),  [System::FlightEvent::Type](ble_protocol_definitions.md#FlightEvent), [Protocol::DataType::Type](ble_protocol_datatype.md#DataType), 
 
 
 ## <a name="LedModeBase">Protocol::LedModeBase</a>
