@@ -44,6 +44,7 @@ namespace Protocol
 
 
 ## <a name="ModeVehicle">System::ModeVehicle::Type</a>
+페트론 동작 모드를 선택합니다.<br>
 CommandBase 구조체에서 option 변수에 사용합니다.
 
 ```cpp
@@ -71,6 +72,7 @@ namespace System
 
 
 ## <a name="Coordinate">System::Coordinate::Type</a>
+페트론 조종기 방향 기준을 선택합니다. World는 앱솔루트 모드를 의미합니다. 드론 외부 세계를 중심으로 좌표를 판단한다는 의미입니다. Local은 일반모드입니다. 드론을 중심으로 좌표를 판단한다는 의미입니다.<br>
 CommandBase 구조체에서 option 변수에 사용합니다.
 
 ```cpp
@@ -80,16 +82,79 @@ namespace System
     {
         enum Type
         {
-            None = 0,           ///< 없음
+            None = 0,           // 없음
             
-            World,              ///< 고정 좌표계(Absolute)
-            Local,              ///< 상대 좌표계(일반)
+            World,              // 고정 좌표계(Absolute)
+            Local,              // 상대 좌표계(일반)
             
             EndOfType
         };
     }
 }
 ```
+
+
+## <a name="Trim">System::Trim::Type</a>
+페트론이 한쪽 방향으로 흐를 때 반대 방향을 입력하여 호버링을 할 수 있게 조정합니다. 한 번 전송할 때마다 일정하게 값이 변합니다.
+CommandBase 구조체에서 option 변수에 사용합니다.
+
+```cpp
+namespace System
+{
+    namespace Trim
+    {
+        enum Type
+        {
+            None = 0,           ///< 없음
+ 
+            RollIncrease,       ///< Roll 증가
+            RollDecrease,       ///< Roll 감소              
+            PitchIncrease,      ///< Pitch 증가
+            PitchDecrease,      ///< Pitch 감소             
+            YawIncrease,        ///< Yaw 증가
+            YawDecrease,        ///< Yaw 감소               
+            ThrottleIncrease,   ///< Throttle 증가
+            ThrottleDecrease,   ///< Throttle 감소
+            
+            EndOfType
+        };
+    }
+}
+```
+
+## <a name="FlightEvent">System::FlightEvent::Type</a>
+페트론 비행 이벤트를 실행합니다.
+CommandBase 구조체에서 option 변수에 사용합니다.
+
+```cpp
+namespace System
+{
+    namespace FlightEvent
+    {
+        enum Type
+        {
+            None = 0,           ///< 없음
+            
+            TakeOff,            ///< 이륙
+            
+            FlipFront,          ///< 회전(Not Yet)
+            FlipRear,           ///< 회전(Not Yet)
+            FlipLeft,           ///< 회전(Not Yet)
+            FlipRight,          ///< 회전(Not Yet)
+            
+            Stop,               ///< 정지
+            Landing,            ///< 착륙
+            Reverse,            ///< 뒤집기
+            
+            Shot,               ///< 미사일 쏠때 움직임
+            UnderAttack,        ///< 미사일 맞을때 움직임
+            
+            EndOfType   
+        };
+    }
+}
+```
+
 
 
 
