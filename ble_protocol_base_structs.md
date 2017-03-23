@@ -1,4 +1,4 @@
-***PETRONE / BLE / Protocol***<br>
+***PETRONE / BLE / Protocol / BaseStructures***<br>
 Modified : 2017.03.23
 
 ---
@@ -21,7 +21,7 @@ namespace Protocol
     };
 }
 ```
-- [commandType](ble_protocol_definitions.md#commandtype) : 명령 타입
+- [commandType](ble_protocol_definitions.md#CommandType) : 명령 타입
 
 
 **LedModeBase**
@@ -39,6 +39,7 @@ namespace Protocol
     };
 }
 ```
+- [mode](ble_protocol_definitions.md#LightMode) : 명령 타입
 
 
 ---
