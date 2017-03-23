@@ -1,4 +1,4 @@
 # PETRONE
 
-1. [Petrone Communication - Bluetooth Smart](Petrone_Communication_BluetoothSmart.md)
+1. [BLE Protocol - DataType](ble_protocol_datatype.md)
  
