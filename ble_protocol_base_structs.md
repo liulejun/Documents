@@ -25,7 +25,7 @@ namespace Protocol
 
 
 ## <a name="LightModeBase">Protocol::LightModeBase</a>
-LED 모드를 변경할 때 사용하는 기본 구조체입니다.
+LED 모드를 변경할 때 사용하는 구조체입니다.
 ```cpp
 namespace Protocol
 {
@@ -42,7 +42,7 @@ namespace Protocol
 
 
 ## <a name="LightColor">Light::Color</a>
-RGB LED의 색상을 직접 지정할 때 사용하는 기본 구조체입니다.
+RGB LED의 색상을 직접 지정할 때 사용하는 구조체입니다.
 ```cpp
 namespace Light
 {
@@ -74,7 +74,7 @@ namespace Light
 
 
 ## <a name="LightEventBase">Protocol::LightEventBase</a>
-LED 이벤트를 실행할 때 사용하는 기본 구조체입니다. 지정한 횟수만큼 반복 실행 후 기존 실행하던 모드로 복귀합니다.
+LED 이벤트를 실행할 때 사용하는 구조체입니다. 지정한 횟수만큼 반복 실행 후 기존 실행하던 모드로 복귀합니다.
 ```cpp
 namespace Protocol
 {
@@ -110,7 +110,7 @@ namespace Light
 
 
 ## <a name="MotorBase">Protocol::MotorBase</a>
-모터를 작동하거나 현재 모터에 적용된 입력값을 확인하는데 사용하는 기본 구조체입니다.
+모터를 작동하거나 현재 모터에 적용된 입력값을 확인하는데 사용하는 구조체입니다.
 ```cpp
 namespace Protocol
 {
