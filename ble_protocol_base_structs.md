@@ -21,8 +21,7 @@ namespace Protocol
     };
 }
 ```
-[commandType](ble_protocol_definitions.md#commandtype)
-
+- [commandType](ble_protocol_definitions.md#commandtype) : 명령 타입
 
 
 **LedModeBase**
