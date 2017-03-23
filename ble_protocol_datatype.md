@@ -3,10 +3,7 @@ Modified : 2017.03.23
 
 ---
 
-**DataType**
------------------
-**Protocol::DataType::Type**
-
+## <a name="DataType">Protocol::DataType::Type</a>
 데이터 타입
 
 ```cpp
