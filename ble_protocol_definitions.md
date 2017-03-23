@@ -17,32 +17,24 @@ namespace Protocol
     {
         enum Type
         {
-            None = 0,                       ///< 이벤트 없음
+            None = 0,               // 이벤트 없음
             
             // 설정
-            ModeVehicle = 0x10,             ///< 동작 모드 전환
+            ModeVehicle = 0x10,     // 동작 모드 전환
             
             // 제어
-            Coordinate = 0x20,              ///< 방위 기준 변경
-            Trim,                           ///< 트림 변경
-            FlightEvent,                    ///< 비행 이벤트 실행
-            DriveEvent,                     ///< 주행 이벤트 실행
-            Stop,                           ///< 정지
+            Coordinate = 0x20,      // 방위 기준 변경
+            Trim,                   // 트림 변경
+            FlightEvent,            // 비행 이벤트 실행
+            DriveEvent,             // 주행 이벤트 실행
+            Stop,                   // 정지
             
-            ResetHeading = 0x50,            ///< 방향을 리셋(앱솔루트 모드 일 때 현재 heading을 0도로 변경)
-            ClearGyroBiasAndTrim,           ///< 자이로 바이어스와 트림 설정 초기화
-            ClearTrim,                      ///< 트림 초기화
-            
-            // 통신[Bluetooth]
-            PairingActivate = 0x80,         ///< 페어링 활성화
-            PairingDeactivate,              ///< 페어링 비활성화
-            AdvertisingStart,               ///< 장치를 검색 가능한 상태로 변경
-            AdvertisingStop,                ///< 장치를 검색 불가능한 상태로 변경
-            TerminateConnection,            ///< 연결 종료
-            ClearBondList,                  ///< 본딩된 장치 리스트 제거
+            ResetHeading = 0x50,    // 방향 초기화
+            ClearGyroBiasAndTrim,   // 자이로 바이어스와 트림 설정 초기화
+            ClearTrim,              // 트림 초기화
             
             // 요청
-            Request = 0x90,                 ///< 지정한 타입의 데이터 요청
+            Request = 0x90,         // 지정한 타입의 데이터 요청
             
             EndOfType
         };
@@ -61,18 +53,14 @@ namespace System
     {
         enum Type
         {
-            None = 0,           ///< 없음
+            None = 0,           // 없음
             
-            Flight = 0x10,      ///< 비행(가드 포함)
-            FlightNoGuard,      ///< 비행(가드 없음)
-            FlightFPV,          ///< 비행(FPV)
+            Flight = 0x10,      // 비행(가드 포함)
+            FlightNoGuard,      // 비행(가드 없음)
+            FlightFPV,          // 비행(FPV)
             
-            Drive = 0x20,       ///< 주행
-            DriveFPV,           ///< 주행(FPV)
-            
-            Test = 0x30,        ///< 테스트
-            
-            Fan = 0x40,         ///< 선풍기 모드
+            Drive = 0x20,       // 주행
+            DriveFPV,           // 주행(FPV)
             
             EndOfType
         };
