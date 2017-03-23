@@ -7,10 +7,9 @@ Modified : 2017.03.23
 
 ---
 
-<a name="CommandType">**CommandType**</a>
------------------
-**Protocol::CommandType::Type**<br>
-CommandBase 구조체에서 commandType 변수에 사용하는 값입니다.
+## <a name="CommandType">Protocol::CommandType::Type</a>
+CommandBase 구조체에서 commandType 변수에 사용합니다.
+
 ```cpp
 namespace Protocol
 {
@@ -52,10 +51,9 @@ namespace Protocol
 ```
 
 
-<a name="LightMode">**LightMode**</a>
------------------
-**Light::Mode::Type**<br>
+## <a name="LightMode">Light::Mode::Type</a>
 LED 모드 또는 이벤트 명령 시 동작 모드를 지정할 때 사용합니다.
+
 ```cpp
 namespace Light
 {
