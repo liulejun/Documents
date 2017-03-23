@@ -22,7 +22,7 @@ namespace Protocol
 }
 ```
 - commandType : [Protocol::CommandType::Type](ble_protocol_definitions.md#CommandType)
-- option : [Protocol::CommandType::Type](ble_protocol_definitions.md#CommandType)
+- option : [System::ModeVehicle::Type](ble_protocol_definitions.md#ModeVehicle), [System::Coordinate::Type](ble_protocol_definitions.md#Coordinate), 
 
 
 **LedModeBase**
