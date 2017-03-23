@@ -78,4 +78,4 @@ namespace DataType
 ```
 
 ---
-<a href="javascript:history.back()">Back</a> / [Home](README.md)
+[Home](README.md)
