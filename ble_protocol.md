@@ -1,7 +1,6 @@
 # PETRONE
 
-***BLE / Protocol***
-
+***BLE / Protocol***<br>
 Modified : 2017.03.23
 
 ---
@@ -23,7 +22,6 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
 
 **2. 전송 데이터 구조**
 -----------------
-
 <table>
     <tr>
         <td>0</td>
