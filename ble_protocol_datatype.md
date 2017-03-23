@@ -21,7 +21,7 @@ namespace DataType
         // 시스템 정보
         Ping,                   // 통신 확인(reserved)
         Ack,                    // 데이터 수신에 대한 응답
-        Error,                  // 오류(reserved, 비트 플래그는 추후에 지정)
+        Error,                  // 오류(reserved)
         Request,                // 지정한 타입의 데이터 요청
         
         // 조종, 명령 
@@ -49,7 +49,7 @@ namespace DataType
         LedModeDefaultColor2,   // LED 초기 모드 3색 직접 지정 2개
         
         // 상태 
-        Address = 0x30,         // IEEE address
+        Address = 0x30,         // 장치 주소
         State,                  // 드론의 상태(비행 모드, 방위기준, 배터리량)
         Attitude,               // 드론의 자세(Vector)
         GyroBias,               // 자이로 바이어스 값(Vector)
