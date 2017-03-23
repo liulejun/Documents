@@ -26,13 +26,14 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
     <tr>
         <td>0</td>
         <td>1</td>
+        <td>2</td>
         <td>...</td>
         <td>N-1</td>
         <td>N</td>
     </tr>
     <tr>
         <td>DataType</td>
-        <td colspan="4">Data</td>
+        <td colspan="5">Data</td>
     </tr>
 </table>
 
