@@ -21,19 +21,6 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
 
 **2. 전송 데이터 구조**
 -----------------
-<table>
-    <tr>
-        <td>0</td>
-        <td>1</td>
-        <td>...</td>
-        <td>N-1</td>
-        <td>N</td>
-    </tr>
-    <tr>
-        <td>DataType</td>
-        <td colspan="4">Data</td>
-    </tr>
-</table>
 
 - 첫 번째 바이트는 데이터 타입을 의미
 - 두 번째 바이트부터는 첫 번째 바이트(데이터의 타입)에서 정의한 데이터 전달
