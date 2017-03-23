@@ -25,7 +25,7 @@ namespace Protocol
 
 
 ## <a name="LedModeBase">Protocol::LedModeBase</a>
-LED를 변경할 때 사용하는 기본 구조체입니다.
+LED 모드를 변경할 때 사용하는 기본 구조체입니다.
 ```cpp
 namespace Protocol
 {
