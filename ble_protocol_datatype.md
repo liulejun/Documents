@@ -49,7 +49,7 @@ namespace DataType
         LedModeDefaultColor2,   // LED 초기 모드 3색 직접 지정 2개
         
         // 상태 
-        Address = 0x30,         // 장치 주소
+        Address = 0x30,         // 장치 주소
         State,                  // 드론의 상태(비행 모드, 방위기준, 배터리량)
         Attitude,               // 드론의 자세(Vector)
         GyroBias,               // 자이로 바이어스 값(Vector)
