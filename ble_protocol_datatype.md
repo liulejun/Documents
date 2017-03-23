@@ -18,7 +18,6 @@ namespace DataType
     {
         None = 0,               // 없음
 
-        // -- BLE ---------------------------------------------------------
         // 시스템 정보
         Ping,                   // 통신 확인(reserved)
         Ack,                    // 데이터 수신에 대한 응답
@@ -63,7 +62,6 @@ namespace DataType
         
         // 데이터 송수신
         IrMessage = 0x40,       // IR 데이터 송수신
-        
         
         // 센서 및 제어
         ImuRawAndAngle = 0x50,  // IMU Raw + Angle
