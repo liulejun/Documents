@@ -8,7 +8,7 @@ Modified : 2017.03.23
 
 ---
 
-**CommandType**
+<a name="commandtype">**CommandType**</a>
 -----------------
 **Protocol::CommandType**<br>
 CommandBase 구조체에서 commandType 변수에 사용하는 값입니다.
