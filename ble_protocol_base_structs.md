@@ -123,11 +123,6 @@ namespace Protocol
 ```
 
 
-- event : [Light::Mode::Type](ble_protocol_definitions.md#LightMode)
-- color : [Light::Color](#LightColor)
-
-
-
 ---
 [Home](README.md)
 
