@@ -30,7 +30,7 @@ namespace Protocol
     struct CommandBase
     {
         u8 commandType;   ///< 명령 타입
-        u8 option;        ///< 명령에 대한 옵션(System.h에 정의한 값을 사용)
+        u8 option;        ///< 명령에 대한 옵션
     };
 }
 ```
