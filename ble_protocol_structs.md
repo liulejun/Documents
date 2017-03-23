@@ -82,7 +82,7 @@ namespace Protocol
 ```cpp
 namespace Protocol
 {
-    struct Command
+    struct Command2
     {
         CommandBase   command1;
         CommandBase   command2;
@@ -97,7 +97,7 @@ namespace Protocol
 ```cpp
 namespace Protocol
 {
-    struct Command
+    struct Command3
     {
         CommandBase   command1;
         CommandBase   command2;
@@ -106,6 +106,98 @@ namespace Protocol
 }
 ```
 - command1, command2, command3 : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
+
+
+## <a name="LightMode">Protocol::LightMode</a>
+LED 모드 변경 하나를 전달합니다.
+```cpp
+namespace Protocol
+{
+    struct LightMode
+    {
+        LightModeBase   lightMode;
+    };
+}
+```
+- lightMode : [Protocol::LightModeBase](ble_protocol_base_structs.md#LightModeBase)
+
+
+## <a name="LightMode2">Protocol::LightMode2</a>
+LED 모드 변경 두 개를 전달합니다.
+```cpp
+namespace Protocol
+{
+    struct LightMode2
+    {
+        LightModeBase   lightMode1;
+        LightModeBase   lightMode2;
+    };
+}
+```
+- lightMode1, lightMode2 : [Protocol::LightModeBase](ble_protocol_base_structs.md#LightModeBase)
+
+
+## <a name="LightModeCommand">Protocol::LightModeCommand</a>
+LED 모드 변경 하나와 명령 하나를 전달합니다.
+```cpp
+namespace Protocol
+{
+    struct LightModeCommand
+    {
+        LightModeBase   lightMode;
+        CommandBase     command;
+    };
+}
+```
+- lightMode : [Protocol::LightModeBase](ble_protocol_base_structs.md#LightModeBase)
+- command : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
+
+
+## <a name="LightModeCommandIr">Protocol::LightModeCommandIr</a>
+LED 모드 변경 하나와 명령 하나, 그리고 IR 메세지를 전달합니다.
+```cpp
+namespace Protocol
+{
+    struct LightModeCommandIr
+    {
+        LightModeBase   lightMode;
+        CommandBase     command;
+        u32             irData;
+    };
+}
+```
+- lightMode : [Protocol::LightModeBase](ble_protocol_base_structs.md#LightModeBase)
+- command : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
+
+
+## <a name="LightModeColor">Protocol::LightModeColor</a>
+LED 모드 변경 하나를 전달합니다. RGB 값을 직접 지정합니다.
+```cpp
+namespace Protocol
+{
+    struct LightModeColor
+    {
+        LightModeColorBase   lightModeColor;
+    };
+}
+```
+- lightModeColor : [Protocol::LightModeColorBase](ble_protocol_base_structs.md#LightModeColorBase)
+
+
+## <a name="LightModeColor2">Protocol::LightModeColor2</a>
+LED 모드 변경 두 개를 전달합니다. RGB 값을 직접 지정합니다.
+```cpp
+namespace Protocol
+{
+    struct LightModeColor2
+    {
+        LightModeColorBase   lightModeColor1;
+        LightModeColorBase   lightModeColor2;
+    };
+}
+```
+- lightModeColor1, lightModeColor2 : [Protocol::LightModeColorBase](ble_protocol_base_structs.md#LightModeColorBase)
+
 
 
 
