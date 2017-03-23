@@ -63,6 +63,52 @@ Control 입력 값의 범위는 다음과 같습니다. Drive 모드에서는 **
 | throttle | s8   | -100 ~ 100  | 승하강    | 하강       | 상승          |
 
 
+## <a name="Command">Protocol::Command</a>
+명령 하나를 전달합니다.
+```cpp
+namespace Protocol
+{
+    struct Command
+    {
+        CommandBase   command;
+    };
+}
+```
+- command : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
+
+
+## <a name="Command2">Protocol::Command2</a>
+명령 두 개를 전달합니다.
+```cpp
+namespace Protocol
+{
+    struct Command
+    {
+        CommandBase   command1;
+        CommandBase   command2;
+    };
+}
+```
+- command1, command2 : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
+
+
+## <a name="Command3">Protocol::Command3</a>
+명령 세 개를 전달합니다.
+```cpp
+namespace Protocol
+{
+    struct Command
+    {
+        CommandBase   command1;
+        CommandBase   command2;
+        CommandBase   command3;
+    };
+}
+```
+- command1, command2, command3 : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
+
+
+
 
 ---
 [Home](README.md)
