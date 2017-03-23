@@ -3,6 +3,10 @@ Modified : 2017.03.23
 
 ---
 
+#### 데이터 타입을 소개합니다.
+
+---
+
 ## <a name="DataType">Protocol::DataType::Type</a>
 데이터 타입
 
