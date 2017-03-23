@@ -21,7 +21,7 @@ namespace Protocol
     };
 }
 ```
-- [commandType](ble_protocol_definitions.md#CommandType) : 명령 타입
+- [commandType](ble_protocol_definitions.md#CommandType) : Protocol::CommandType::Type
 
 
 **LedModeBase**
@@ -39,7 +39,7 @@ namespace Protocol
     };
 }
 ```
-- [mode](ble_protocol_definitions.md#LightMode) : 명령 타입
+- [mode](ble_protocol_definitions.md#LightMode) : Light::Mode::Type
 
 
 ---
