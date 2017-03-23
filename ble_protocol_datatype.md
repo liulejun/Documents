@@ -30,22 +30,22 @@ namespace DataType
         Command3,               // 다중 명령(3가지 설정을 동시에 변경)
         
         // LED
-        LedMode = 0x20,         // LED 모드 지정
-        LedMode2,               // LED 모드 2개 지정
-        LedModeCommand,         // LED 모드, 커맨드
-        LedModeCommandIr,       // LED 모드, 커맨드, IR 데이터 송신
-        LedModeColor,           // LED 모드 3색 직접 지정
-        LedModeColor2,          // LED 모드 3색 직접 지정 2개
+        LightMode = 0x20,       // LED 모드 지정
+        LightMode2,             // LED 모드 2개 지정
+        LightModeCommand,       // LED 모드, 커맨드
+        LightModeCommandIr,     // LED 모드, 커맨드, IR 데이터 송신
+        LightModeColor,         // LED 모드 3색 직접 지정
+        LightModeColor2,        // LED 모드 3색 직접 지정 2개
         
-        LedEvent,               // LED 이벤트
-        LedEvent2,              // LED 이벤트 2개, 
-        LedEventCommand,        // LED 이벤트, 커맨드
-        LedEventCommandIr,      // LED 이벤트, 커맨드, IR 데이터 송신
-        LedEventColor,          // LED 이벤트 3색 직접 지정
-        LedEventColor2,         // LED 이벤트 3색 직접 지정 2개
+        LightEvent,             // LED 이벤트
+        LightEvent2,            // LED 이벤트 2개, 
+        LightEventCommand,      // LED 이벤트, 커맨드
+        LightEventCommandIr,    // LED 이벤트, 커맨드, IR 데이터 송신
+        LightEventColor,        // LED 이벤트 3색 직접 지정
+        LightEventColor2,       // LED 이벤트 3색 직접 지정 2개
         
-        LedModeDefaultColor,    // LED 초기 모드 3색 직접 지정
-        LedModeDefaultColor2,   // LED 초기 모드 3색 직접 지정 2개
+        LightModeDefaultColor,  // LED 초기 모드 3색 직접 지정
+        LightModeDefaultColor2, // LED 초기 모드 3색 직접 지정 2개
         
         // 상태 
         Address = 0x30,         // 장치 주소
