@@ -6,4 +6,5 @@
 3. [BLE Protocol - Rules](ble_protocol_rules.md)
 4. [BLE Protocol - Definitions](ble_protocol_definitions.md)
 5. [BLE Protocol - Base Structs](ble_protocol_base_structs.md)
- 
+6. [BLE Protocol - Structs](ble_protocol_structs.md)
+
