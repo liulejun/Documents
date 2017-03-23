@@ -56,12 +56,12 @@ namespace Light
 ```
 
 
-## <a name="LightModeColorBase">Light::ModeColorBase</a>
+## <a name="LightModeColorBase">Protocol::LightModeColorBase</a>
 LED 모드를 변경할 때 사용하는 구조체입니다. RGB 색상을 직접 지정할 수 있습니다.
 ```cpp
-namespace Light
+namespace Protocol
 {
-    struct ModeColorBase
+    struct LightModeColorBase
     {
         u8             mode;           // LED 모드
         Light::Color   color;          // RGB 색상
@@ -91,12 +91,12 @@ namespace Protocol
 - color : [Light::Colors::Type](ble_protocol_definitions.md#LightColors)
 
 
-## <a name="LightEventColorBase">Light::EventColorBase</a>
+## <a name="LightEventColorBase">Protocol::LightEventColorBase</a>
 LED 이벤트를 실행할 때 사용하는 구조체입니다. 지정한 횟수만큼 반복 실행 후 기존 실행하던 모드로 복귀합니다. RGB 색상을 직접 지정할 수 있습니다.
 ```cpp
-namespace Light
+namespace Protocol
 {
-    struct EventColorBase
+    struct LightEventColorBase
     {
         u8             event;          // LED 모드
         Light::Color   color;          // RGB 색상
