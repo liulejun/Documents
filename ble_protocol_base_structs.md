@@ -24,12 +24,12 @@ namespace Protocol
 - option : [System::ModeVehicle::Type](ble_protocol_definitions.md#ModeVehicle), [System::Coordinate::Type](ble_protocol_definitions.md#Coordinate), [System::Trim::Type](ble_protocol_definitions.md#Trim),  [System::FlightEvent::Type](ble_protocol_definitions.md#FlightEvent), [Protocol::DataType::Type](ble_protocol_datatype.md#DataType), 
 
 
-## <a name="LedModeBase">Protocol::LedModeBase</a>
+## <a name="LightModeBase">Protocol::LightModeBase</a>
 LED 모드를 변경할 때 사용하는 기본 구조체입니다.
 ```cpp
 namespace Protocol
 {
-    struct LedModeBase
+    struct LightModeBase
     {
         u8 mode;         // LED 모드
         u8 color;        // LED 모드 색상(팔레트 인덱스)
