@@ -4,10 +4,10 @@ Modified : 2017.03.23
 
 ---
 
+
 **1. PETRONE의 통신**
 -----------------
-
-**PETRONE**과의 통신에는 Bluetooth Low Energy(이하 BLE)를 사용합니다.<br>
+**PETRONE**은 무선 연결에 Bluetooth Low Energy(이하 BLE)를 사용합니다.<br>
 BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽거나, 통지하는 방법을 사용합니다.<br>
 **PETRONE**에서 사용하는 **Service**와 **Characteristic**은 다음과 같습니다.
 
@@ -16,6 +16,8 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
 | DRONE_SERVICE  |                | *C320DF00-7891-11E5-8BCF-FEFF819CDC9F* |                       |
 |   ├           | DRONE_DATA     | *C320DF01-7891-11E5-8BCF-FEFF819CDC9F* | 드론 → 앱 (*Notify*) |
 |   └           | DRONE_CONF     | *C320DF02-7891-11E5-8BCF-FEFF819CDC9F* | 앱 → 드론 (*Write*)  |
+
+
 
 **2. 전송 데이터 구조**
 -----------------
@@ -36,6 +38,7 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
 - 첫 번째 바이트는 데이터 타입을 의미
 - 두 번째 바이트부터는 첫 번째 바이트(데이터의 타입)에서 정의한 데이터 전달
 - 전체 길이는 최대 20byte
+
 
 
 **3. 데이터 송수신 규칙**
