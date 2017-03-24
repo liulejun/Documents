@@ -503,11 +503,147 @@ namespace Protocol
 - flight : [Protocol::TrimFlight](#TrimFlight)
 - drive : [Protocol::TrimDrive](#TrimDrive)
 
+<br>
+<br>
 
+## <a name="CountFlight">Protocol::CountFlight</a>
+비행과 관련된 저장값을 읽을 때 사용합니다.
+```cpp
+namespace Protocol
+{
+    struct CountFlight
+    {
+        u64 timeFlight;             // 비행 시간
+        
+        u16 countTakeOff;           // 이륙 횟수
+        u16 countLanding;           // 착륙 횟수
+        u16 countAccident;          // 충돌 횟수
+    };
+}
+```
 
+<br>
+<br>
 
+## <a name="CountDrive">Protocol::CountDrive</a>
+주행과 관련된 저장값을 읽을 때 사용합니다.
+```cpp
+namespace Protocol
+{
+    struct CountDrive
+    {
+        u64 timeDrive;              // 주행 시간
+        
+        u16 countAccident;          // 충돌 횟수
+    };
+}
+```
+countAccident 변수는 주행 중 충돌을 카운트 하기 위해 만든 변수이나 실제 주행 시 노면이 고르지 못할 때의 충격에 의해서도 카운트가 증가하는 문제가 있습니다. 현재로는 크게 의미가 없는 값으로 생각하시면 됩니다.
 
+<br>
+<br>
 
+## <a name="IrMessage">Protocol::IrMessage</a>
+IR 데이터를 전송하는데 사용하거나, PETRONE이 IR 데이터를 수신 받았을 때 외부 장치로 전송하는 데이터입니다.
+```cpp
+namespace Protocol
+{
+    struct IrMessage
+    {
+        u8  direction;               // 수신 받은 방향
+        u32 irData;                  // IR 메세지
+    };
+}
+```
+- direction : [System::Direction::Type](ble_protocol_definitions.md#Direction)
+
+<br>
+<br>
+
+## <a name="ImuRawAndAngle">Protocol::ImuRawAndAngle</a>
+자이로 센서에서 출력한 값과 내부에서 계산한 드론의 자세 값을 반환합니다.
+```cpp
+namespace Protocol
+{
+    struct ImuRawAndAngle
+    {
+        s16     accX;
+        s16     accY;
+        s16     accZ;
+        s16     gyroRoll;
+        s16     gyroPitch;
+        s16     gyroYaw;
+        s16     angleRoll;
+        s16     anglePitch;
+        s16     angleYaw;
+    };
+}
+```
+
+<br>
+<br>
+
+## <a name="Pressure">Protocol::Pressure</a>
+압력 센서의 출력값을 반환합니다. d1과 d2는 MS5607에서만 출력하는 값으로 DPS310이 사용된 기체에서는 0으로 출력됩니다.
+```cpp
+namespace Protocol
+{
+    struct Pressure
+    {
+        s32		d1;
+        s32		d2;
+        s32		temperature;
+        s32		pressure;
+    };
+}
+```
+
+<br>
+<br>
+
+## <a name="ImageFlow">Protocol::ImageFlow</a>
+자세 제어에 사용하는 영상 데이터 처리 값입니다.
+```cpp
+namespace Protocol
+{
+    struct ImageFlow
+    {
+        s32		fVelocitySumX;
+        s32		fVelocitySumY;
+    };
+}
+```
+
+<br>
+<br>
+
+## <a name="Button">Protocol::Button</a>
+버튼 입력 값입니다.
+```cpp
+namespace Protocol
+{
+    struct Button
+    {
+        u8      button;
+    };
+}
+```
+
+<br>
+<br>
+
+## <a name="Motor">Protocol::Motor</a>
+모터를 동작시키거나, 현재 모터에 입력된 값을 확인할 때 사용합니다.
+```cpp
+namespace Protocol
+{
+    struct Motor
+    {
+        MotorBase motor[4];
+    };
+}
+```
+- motor : [Protocol::MotorBase::Type](ble_protocol_base_structs.md#MotorBase)
 
 
 <br>
