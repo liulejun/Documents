@@ -78,7 +78,7 @@ namespace System
 <br>
 
 ## <a name="Coordinate">System::Coordinate::Type</a>
-페트론 조종기 방향 기준을 선택합니다. World는 앱솔루트 모드를 의미합니다. 드론 외부 세계를 중심으로 좌표를 판단한다는 의미입니다. Local은 일반모드입니다. 드론을 중심으로 좌표를 판단한다는 의미입니다.<br>
+페트론 조종기 방향 기준을 선택합니다. World는 앱솔루트 모드입니다. 드론 외부 세계를 중심으로 좌표를 판단합니다. Local은 일반모드입니다. 드론을 중심으로 좌표를 판단합니다.<br>
 CommandBase 구조체에서 option 변수에 사용합니다.
 
 ```cpp
