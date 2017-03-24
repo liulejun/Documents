@@ -3,6 +3,7 @@ Modified : 2017.03.23
 
 ---
 
+<br>
 
 **1. PETRONE의 통신**
 -----------------
@@ -16,7 +17,8 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
 |   ├           | DRONE_DATA     | *C320DF01-7891-11E5-8BCF-FEFF819CDC9F* | 드론 → 앱 (*Notify*) |
 |   └           | DRONE_CONF     | *C320DF02-7891-11E5-8BCF-FEFF819CDC9F* | 앱 → 드론 (*Write*)  |
 
-
+<br>
+<br>
 
 **2. 전송 데이터 구조**
 -----------------
@@ -39,6 +41,8 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
 - 두 번째 바이트부터는 첫 번째 바이트(데이터의 타입)에서 정의한 데이터 전달
 - 전체 길이는 최대 20byte
 
+<br>
+<br>
 
 
 **3. 데이터 송수신 규칙**
@@ -50,6 +54,7 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
 - 드론이 앱으로 데이터를 보내는 경우엔 *DRONE_DATA*로 **Notify**를 전송
 
 
+<br>
 
 ---
 [Home](README.md)
