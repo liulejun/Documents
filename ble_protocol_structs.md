@@ -7,6 +7,7 @@ Modified : 2017.03.23
 
 ---
 
+<br>
 
 ## <a name="Ack">Protocol::Ack</a>
 PETRONE이 데이터를 수신 받았을 때 응답으로 보내는 데이터입니다. PETRONE의 현재 내부 시간과 수신 받은 데이터의 타입을 담아서 반환합니다. Ack와 Control을 제외한 대부분의 명령에 대해 응답을 전송합니다.
@@ -22,6 +23,8 @@ namespace Protocol
 ```
 - dataType : [Protocol::DataType::Type](ble_protocol_datatype.md#DataType)
 
+<br>
+<br>
 
 ## <a name="Request">Protocol::Request</a>
 PETRONE에 데이터를 요청할 때 사용합니다.
@@ -36,6 +39,8 @@ namespace Protocol
 ```
 - dataType : [Protocol::DataType::Type](ble_protocol_datatype.md#DataType)
 
+<br>
+<br>
 
 ## <a name="Control">Protocol::Control</a>
 PETRONE을 조종할 때 사용하는 입력값입니다.
@@ -62,6 +67,8 @@ Control 입력 값의 범위는 다음과 같습니다. Drive 모드에서는 **
 | yaw      | s8   | -100 ~ 100  | 좌우 회전 | 반시계     | 시계 방향     |
 | throttle | s8   | -100 ~ 100  | 승하강    | 하강       | 상승          |
 
+<br>
+<br>
 
 ## <a name="Command">Protocol::Command</a>
 명령 하나를 전달합니다.
@@ -76,6 +83,8 @@ namespace Protocol
 ```
 - command : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
 
+<br>
+<br>
 
 ## <a name="Command2">Protocol::Command2</a>
 명령 두 개를 전달합니다.
@@ -91,6 +100,8 @@ namespace Protocol
 ```
 - command1, command2 : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
 
+<br>
+<br>
 
 ## <a name="Command3">Protocol::Command3</a>
 명령 세 개를 전달합니다.
@@ -107,6 +118,8 @@ namespace Protocol
 ```
 - command1, command2, command3 : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
 
+<br>
+<br>
 
 ## <a name="LightMode">Protocol::LightMode</a>
 LED 모드 변경 하나를 전달합니다.
@@ -121,6 +134,8 @@ namespace Protocol
 ```
 - lightMode : [Protocol::LightModeBase](ble_protocol_base_structs.md#LightModeBase)
 
+<br>
+<br>
 
 ## <a name="LightMode2">Protocol::LightMode2</a>
 LED 모드 변경 두 개를 전달합니다.
@@ -136,6 +151,8 @@ namespace Protocol
 ```
 - lightMode1, lightMode2 : [Protocol::LightModeBase](ble_protocol_base_structs.md#LightModeBase)
 
+<br>
+<br>
 
 ## <a name="LightModeCommand">Protocol::LightModeCommand</a>
 LED 모드 변경 하나와 명령 하나를 전달합니다.
@@ -152,6 +169,8 @@ namespace Protocol
 - lightMode : [Protocol::LightModeBase](ble_protocol_base_structs.md#LightModeBase)
 - command : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
 
+<br>
+<br>
 
 ## <a name="LightModeCommandIr">Protocol::LightModeCommandIr</a>
 LED 모드 변경 하나와 명령 하나, 그리고 IR 메세지를 전달합니다.
@@ -169,6 +188,8 @@ namespace Protocol
 - lightMode : [Protocol::LightModeBase](ble_protocol_base_structs.md#LightModeBase)
 - command : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
 
+<br>
+<br>
 
 ## <a name="LightModeColor">Protocol::LightModeColor</a>
 LED 모드 변경 하나를 전달합니다. RGB 값을 직접 지정합니다.
@@ -183,6 +204,8 @@ namespace Protocol
 ```
 - lightModeColor : [Protocol::LightModeColorBase](ble_protocol_base_structs.md#LightModeColorBase)
 
+<br>
+<br>
 
 ## <a name="LightModeColor2">Protocol::LightModeColor2</a>
 LED 모드 변경 두 개를 전달합니다. RGB 값을 직접 지정합니다.
@@ -198,9 +221,7 @@ namespace Protocol
 ```
 - lightModeColor1, lightModeColor2 : [Protocol::LightModeColorBase](ble_protocol_base_structs.md#LightModeColorBase)
 
-
-
-
+<br>
 
 ---
 [Home](README.md)
