@@ -382,15 +382,15 @@ namespace Protocol
 {
     struct State
     {
-        u8          modeVehicle;        ///< 동작 모드
+        u8          modeVehicle;        // 동작 모드
         
-        u8          modeSystem;         ///< 시스템 모드
-        u8          modeFlight;         ///< 비행 모드
-        u8          modeDrive;          ///< 주행 모드
+        u8          modeSystem;         // 시스템 모드
+        u8          modeFlight;         // 비행 모드
+        u8          modeDrive;          // 주행 모드
         
-        u8          sensorOrientation;  ///< 센서 방향
-        u8          coordinate;         ///< 방위
-        u8          battery;            ///< 배터리량(0 ~ 100)
+        u8          sensorOrientation;  // 센서 방향
+        u8          coordinate;         // 방위
+        u8          battery;            // 배터리량(0 ~ 100)
     };
 }
 ```
@@ -411,9 +411,9 @@ namespace Protocol
 {
     struct Attitude
     {
-        s16          roll;         ///< Roll
-        s16          pitch;        ///< Pitch
-        s16          yaw;          ///< Yaw
+        s16          roll;         // Roll
+        s16          pitch;        // Pitch
+        s16          yaw;          // Yaw
     };
 }
 ```
@@ -445,9 +445,9 @@ namespace Protocol
 {
     struct GyroBias
     {
-        s16          roll;         ///< Roll
-        s16          pitch;        ///< Pitch
-        s16          yaw;          ///< Yaw
+        s16          roll;         // Roll
+        s16          pitch;        // Pitch
+        s16          yaw;          // Yaw
     };
 }
 ```
@@ -462,10 +462,10 @@ namespace Protocol
 {
     struct TrimFlight
     {
-        s16          roll;         ///< Roll
-        s16          pitch;        ///< Pitch
-        s16          yaw;          ///< Yaw
-        s16          throttle;     ///< Throttle
+        s16          roll;         // Roll
+        s16          pitch;        // Pitch
+        s16          yaw;          // Yaw
+        s16          throttle;     // Throttle
     };
 }
 ```
@@ -480,7 +480,7 @@ namespace Protocol
 {
     struct TrimDrive
     {
-        s16          wheel;         ///< Wheel
+        s16          wheel;         // Wheel
     };
 }
 ```
