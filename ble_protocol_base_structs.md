@@ -42,6 +42,7 @@ namespace Protocol
 - mode : [Light::Mode::Type](ble_protocol_definitions.md#LightMode)
 - color : [Light::Colors::Type](ble_protocol_definitions.md#LightColors)
 
+<br>
 
 ## <a name="LightColor">Light::Color</a>
 RGB LED의 색상을 직접 지정할 때 사용하는 구조체입니다.
