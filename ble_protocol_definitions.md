@@ -43,6 +43,7 @@ namespace Protocol
 ```
 
 <br>
+<br>
 
 ## <a name="ModeVehicle">System::ModeVehicle::Type</a>
 페트론 동작 모드를 선택합니다.<br>
@@ -72,11 +73,7 @@ namespace System
 ```
 
 <br>
-
----
-
 <br>
-
 
 ## <a name="Coordinate">System::Coordinate::Type</a>
 페트론 조종기 방향 기준을 선택합니다. World는 앱솔루트 모드를 의미합니다. 드론 외부 세계를 중심으로 좌표를 판단한다는 의미입니다. Local은 일반모드입니다. 드론을 중심으로 좌표를 판단한다는 의미입니다.<br>
@@ -101,9 +98,7 @@ namespace System
 ```
 
 <br>
----
 <br>
-
 
 ## <a name="Trim">System::Trim::Type</a>
 페트론이 한쪽 방향으로 흐를 때 반대 방향을 입력하여 호버링을 할 수 있게 조정합니다. 한 번 전송할 때마다 일정하게 값이 변합니다.
@@ -134,9 +129,7 @@ namespace System
 ```
 
 <br>
----
 <br>
-
 
 ## <a name="FlightEvent">System::FlightEvent::Type</a>
 페트론 비행 이벤트를 실행합니다.
@@ -172,9 +165,7 @@ namespace System
 ```
 
 <br>
----
 <br>
-
 
 ## <a name="LightMode">Light::Mode::Type</a>
 LED 모드 또는 이벤트 명령 시 동작 모드를 지정할 때 사용합니다.
@@ -211,9 +202,7 @@ namespace Light
 ```
 
 <br>
----
 <br>
-
 
 ## <a name="LightColors">Light::Colors::Type</a>
 LED 색상을 지정할 때 사용합니다.
