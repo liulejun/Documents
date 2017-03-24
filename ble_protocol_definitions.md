@@ -177,8 +177,7 @@ namespace System
 <br>
 
 ## <a name="SensorOrientation">System::SensorOrientation::Type</a>
-자동차 제어기 동작 상태를 나타냅니다.
-
+센서 방향을 나타냅니다.
 ```cpp
 namespace System
 {
@@ -195,7 +194,31 @@ namespace System
             EndOfType
         };
     }
-    
+}
+```
+
+<br>
+<br>
+
+## <a name="Direction">System::Direction::Type</a>
+방향을 나타냅니다.
+```cpp
+namespace System
+{
+    namespace Direction
+    {
+        enum Type
+        {
+            None = 0,
+
+            Left,
+            Front,
+            Right,
+            Rear,
+            
+            EndOfType
+        };
+    }
 }
 ```
 
