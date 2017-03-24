@@ -7,6 +7,8 @@ Modified : 2017.03.23
 
 ---
 
+<br>
+
 ## <a name="CommandType">Protocol::CommandType::Type</a>
 CommandBase 구조체에서 commandType 변수에 사용합니다.
 
@@ -362,6 +364,7 @@ namespace Light
 }
 ```
 
+<br>
 
 ---
 [Home](README.md)
