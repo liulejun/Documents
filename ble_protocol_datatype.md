@@ -7,6 +7,8 @@ Modified : 2017.03.23
 
 ---
 
+<br>
+
 ## <a name="DataType">Protocol::DataType::Type</a>
 데이터 타입
 
@@ -76,6 +78,8 @@ namespace DataType
     };
 }
 ```
+
+<br>
 
 ---
 [Home](README.md)
