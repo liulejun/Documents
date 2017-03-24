@@ -21,7 +21,7 @@ namespace Protocol
     };
 }
 ```
-- dataType : [Protocol::DataType::Type](kr/protocol/datatype.md#DataType)
+- dataType : [Protocol::DataType::Type](datatype.md#DataType)
 
 <br>
 <br>
@@ -37,7 +37,7 @@ namespace Protocol
     };
 }
 ```
-- dataType : [Protocol::DataType::Type](kr/protocol/datatype.md#DataType)
+- dataType : [Protocol::DataType::Type](datatype.md#DataType)
 
 <br>
 <br>
@@ -81,7 +81,7 @@ namespace Protocol
     };
 }
 ```
-- command : [Protocol::CommandBase](kr/protocol/base_structs.md#CommandBase)
+- command : [Protocol::CommandBase](base_structs.md#CommandBase)
 
 <br>
 <br>
@@ -98,7 +98,7 @@ namespace Protocol
     };
 }
 ```
-- command1, command2 : [Protocol::CommandBase](kr/protocol/base_structs.md#CommandBase)
+- command1, command2 : [Protocol::CommandBase](base_structs.md#CommandBase)
 
 <br>
 <br>
@@ -116,7 +116,7 @@ namespace Protocol
     };
 }
 ```
-- command1, command2, command3 : [Protocol::CommandBase](kr/protocol/base_structs.md#CommandBase)
+- command1, command2, command3 : [Protocol::CommandBase](base_structs.md#CommandBase)
 
 <br>
 <br>
@@ -155,12 +155,12 @@ namespace Protocol
     };
 }
 ```
-- modeVehicle : [System::ModeVehicle::Type](kr/protocol/definitions.md#ModeVehicle)
-- modeSystem : [System::ModeSystem::Type](kr/protocol/definitions.md#ModeSystem)
-- modeFlight : [System::ModeFlight::Type](kr/protocol/definitions.md#ModeFlight)
-- modeDrive : [System::ModeDrive::Type](kr/protocol/definitions.md#ModeDrive)
-- sensorOrientation : [System::SensorOrientation::Type](kr/protocol/definitions.md#SensorOrientation)
-- coordinate : [System::Coordinate::Type](kr/protocol/definitions.md#Coordinate)
+- modeVehicle : [System::ModeVehicle::Type](definitions.md#ModeVehicle)
+- modeSystem : [System::ModeSystem::Type](definitions.md#ModeSystem)
+- modeFlight : [System::ModeFlight::Type](definitions.md#ModeFlight)
+- modeDrive : [System::ModeDrive::Type](definitions.md#ModeDrive)
+- sensorOrientation : [System::SensorOrientation::Type](definitions.md#SensorOrientation)
+- coordinate : [System::Coordinate::Type](definitions.md#Coordinate)
 
 <br>
 <br>
@@ -316,7 +316,7 @@ namespace Protocol
     };
 }
 ```
-- direction : [System::Direction::Type](kr/protocol/definitions.md#Direction)
+- direction : [System::Direction::Type](definitions.md#Direction)
 
 <br>
 <br>
@@ -404,7 +404,7 @@ namespace Protocol
     };
 }
 ```
-- motor : [Protocol::MotorBase::Type](kr/protocol/base_structs.md#MotorBase)
+- motor : [Protocol::MotorBase::Type](base_structs.md#MotorBase)
 
 
 <br>
