@@ -1,5 +1,5 @@
 ***PETRONE / BLE / Protocol / Intro***<br>
-Modified : 2017.03.23
+Modified : 2017.03.24
 
 ---
 

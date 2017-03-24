@@ -1,5 +1,9 @@
 ***PETRONE / BLE / Protocol / Typedef***<br>
-Modified : 2017.03.23
+Modified : 2017.03.24
+
+---
+
+#### PETRONE 프로젝트 내부에서 사용하고 있는 변수 형식을 소개합니다.
 
 ---
 

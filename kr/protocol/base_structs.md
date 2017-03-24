@@ -1,5 +1,5 @@
 ***PETRONE / BLE / Protocol / BaseStructs***<br>
-Modified : 2017.03.23
+Modified : 2017.03.24
 
 ---
 
@@ -21,8 +21,8 @@ namespace Protocol
     };
 }
 ```
-- commandType : [Protocol::CommandType::Type](ble_protocol_definitions.md#CommandType)
-- option : [System::ModeVehicle::Type](ble_protocol_definitions.md#ModeVehicle), [System::Coordinate::Type](ble_protocol_definitions.md#Coordinate), [System::Trim::Type](ble_protocol_definitions.md#Trim),  [System::FlightEvent::Type](ble_protocol_definitions.md#FlightEvent), [Protocol::DataType::Type](ble_protocol_datatype.md#DataType)
+- commandType : [Protocol::CommandType::Type](kr/protocol/definitions.md#CommandType)
+- option : [System::ModeVehicle::Type](kr/protocol/definitions.md#ModeVehicle), [System::Coordinate::Type](kr/protocol/definitions.md#Coordinate), [System::Trim::Type](kr/protocol/definitions.md#Trim),  [System::FlightEvent::Type](kr/protocol/definitions.md#FlightEvent), [Protocol::DataType::Type](kr/protocol/datatype.md#DataType)
 
 <br>
 <br>
@@ -40,8 +40,8 @@ namespace Protocol
     };
 }
 ```
-- mode : [Light::Mode::Type](ble_protocol_definitions.md#LightMode)
-- color : [Light::Colors::Type](ble_protocol_definitions.md#LightColors)
+- mode : [Light::Mode::Type](kr/protocol/definitions.md#LightMode)
+- color : [Light::Colors::Type](kr/protocol/definitions.md#LightColors)
 
 <br>
 <br>
@@ -76,7 +76,7 @@ namespace Protocol
     };
 }
 ```
-- mode : [Light::Mode::Type](ble_protocol_definitions.md#LightMode)
+- mode : [Light::Mode::Type](kr/protocol/definitions.md#LightMode)
 - color : [Light::Color](#LightColor)
 
 <br>
@@ -96,8 +96,8 @@ namespace Protocol
     };
 }
 ```
-- event : [Light::Mode::Type](ble_protocol_definitions.md#LightMode)
-- color : [Light::Colors::Type](ble_protocol_definitions.md#LightColors)
+- event : [Light::Mode::Type](kr/protocol/definitions.md#LightMode)
+- color : [Light::Colors::Type](kr/protocol/definitions.md#LightColors)
 
 <br>
 <br>
@@ -116,7 +116,7 @@ namespace Protocol
     };
 }
 ```
-- event : [Light::Mode::Type](ble_protocol_definitions.md#LightMode)
+- event : [Light::Mode::Type](kr/protocol/definitions.md#LightMode)
 - color : [Light::Color](#LightColor)
 
 <br>

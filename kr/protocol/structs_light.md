@@ -20,7 +20,7 @@ namespace Protocol
     };
 }
 ```
-- lightMode : [Protocol::LightModeBase](ble_protocol_base_structs.md#LightModeBase)
+- lightMode : [Protocol::LightModeBase](kr/protocol/base_structs.md#LightModeBase)
 
 <br>
 <br>
@@ -37,7 +37,7 @@ namespace Protocol
     };
 }
 ```
-- lightMode1, lightMode2 : [Protocol::LightModeBase](ble_protocol_base_structs.md#LightModeBase)
+- lightMode1, lightMode2 : [Protocol::LightModeBase](kr/protocol/base_structs.md#LightModeBase)
 
 <br>
 <br>
@@ -54,8 +54,8 @@ namespace Protocol
     };
 }
 ```
-- lightMode : [Protocol::LightModeBase](ble_protocol_base_structs.md#LightModeBase)
-- command : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
+- lightMode : [Protocol::LightModeBase](kr/protocol/base_structs.md#LightModeBase)
+- command : [Protocol::CommandBase](kr/protocol/base_structs.md#CommandBase)
 
 <br>
 <br>
@@ -73,8 +73,8 @@ namespace Protocol
     };
 }
 ```
-- lightMode : [Protocol::LightModeBase](ble_protocol_base_structs.md#LightModeBase)
-- command : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
+- lightMode : [Protocol::LightModeBase](kr/protocol/base_structs.md#LightModeBase)
+- command : [Protocol::CommandBase](kr/protocol/base_structs.md#CommandBase)
 
 <br>
 <br>
@@ -90,7 +90,7 @@ namespace Protocol
     };
 }
 ```
-- lightModeColor : [Protocol::LightModeColorBase](ble_protocol_base_structs.md#LightModeColorBase)
+- lightModeColor : [Protocol::LightModeColorBase](kr/protocol/base_structs.md#LightModeColorBase)
 
 <br>
 <br>
@@ -107,7 +107,7 @@ namespace Protocol
     };
 }
 ```
-- lightModeColor1, lightModeColor2 : [Protocol::LightModeColorBase](ble_protocol_base_structs.md#LightModeColorBase)
+- lightModeColor1, lightModeColor2 : [Protocol::LightModeColorBase](kr/protocol/base_structs.md#LightModeColorBase)
 
 <br>
 <br>
@@ -123,7 +123,7 @@ namespace Protocol
     };
 }
 ```
-- lightEvent : [Protocol::LightEventBase](ble_protocol_base_structs.md#LightEventBase)
+- lightEvent : [Protocol::LightEventBase](kr/protocol/base_structs.md#LightEventBase)
 
 <br>
 <br>
@@ -140,7 +140,7 @@ namespace Protocol
     };
 }
 ```
-- lightEvent1, lightEvent2 : [Protocol::LightEventBase](ble_protocol_base_structs.md#LightEventBase)
+- lightEvent1, lightEvent2 : [Protocol::LightEventBase](kr/protocol/base_structs.md#LightEventBase)
 
 <br>
 <br>
@@ -157,8 +157,8 @@ namespace Protocol
     };
 }
 ```
-- lightEvent : [Protocol::LightEventBase](ble_protocol_base_structs.md#LightEventBase)
-- command : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
+- lightEvent : [Protocol::LightEventBase](kr/protocol/base_structs.md#LightEventBase)
+- command : [Protocol::CommandBase](kr/protocol/base_structs.md#CommandBase)
 
 <br>
 <br>
@@ -176,8 +176,8 @@ namespace Protocol
     };
 }
 ```
-- lightEvent : [Protocol::LightEventBase](ble_protocol_base_structs.md#LightEventBase)
-- command : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
+- lightEvent : [Protocol::LightEventBase](kr/protocol/base_structs.md#LightEventBase)
+- command : [Protocol::CommandBase](kr/protocol/base_structs.md#CommandBase)
 
 <br>
 <br>
@@ -193,7 +193,7 @@ namespace Protocol
     };
 }
 ```
-- lightEventColor : [Protocol::LightEventColorBase](ble_protocol_base_structs.md#LightEventColorBase)
+- lightEventColor : [Protocol::LightEventColorBase](kr/protocol/base_structs.md#LightEventColorBase)
 
 <br>
 <br>
@@ -210,7 +210,7 @@ namespace Protocol
     };
 }
 ```
-- lightEventColor1, lightEventColor2 : [Protocol::LightEventColorBase](ble_protocol_base_structs.md#LightEventColorBase)
+- lightEventColor1, lightEventColor2 : [Protocol::LightEventColorBase](kr/protocol/base_structs.md#LightEventColorBase)
 
 <br>
 <br>
@@ -226,7 +226,7 @@ namespace Protocol
     };
 }
 ```
-- lightModeDefaultColor : [Protocol::LightModeColorBase](ble_protocol_base_structs.md#LightModeColorBase)
+- lightModeDefaultColor : [Protocol::LightModeColorBase](kr/protocol/base_structs.md#LightModeColorBase)
 
 <br>
 <br>
@@ -243,7 +243,7 @@ namespace Protocol
     };
 }
 ```
-- lightModeDefaultColor1, lightModeDefaultColor2 : [Protocol::LightModeColorBase](ble_protocol_base_structs.md#LightModeColorBase)
+- lightModeDefaultColor1, lightModeDefaultColor2 : [Protocol::LightModeColorBase](kr/protocol/base_structs.md#LightModeColorBase)
 
 
 <br>
