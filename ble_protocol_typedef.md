@@ -1,4 +1,4 @@
-***PETRONE / BLE / Protocol / Rules***<br>
+***PETRONE / BLE / Protocol / Typedef***<br>
 Modified : 2017.03.23
 
 ---
