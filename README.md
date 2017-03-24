@@ -13,7 +13,7 @@ Modified : 2017.03.24
 4. [Definitions](ble_protocol_definitions.md)
 5. [Base Structs](ble_protocol_base_structs.md)
 6. [Structs](ble_protocol_structs.md)
-
+7. [Structs - Light](ble_protocol_structs_light.md)
 
 
 [http://petrone.github.io/Documents/](http://petrone.github.io/Documents/)
