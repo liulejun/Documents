@@ -1,7 +1,7 @@
 # PETRONE
 
 
-## BLE Protocol
+### BLE Protocol
 1. [Intro](ble_protocol_intro.md)
 2. [Typedef](ble_protocol_typedef.md)
 3. [DataType](ble_protocol_datatype.md)
