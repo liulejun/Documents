@@ -77,6 +77,131 @@ namespace System
 <br>
 <br>
 
+## <a name="ModeSystem">System::ModeSystem::Type</a>
+시스템 동작 상태를 나타냅니다.
+
+```cpp
+namespace System
+{
+    namespace ModeSystem
+    {
+        enum Type
+        {
+            None = 0,           // 없음
+            
+            Boot,               // 부팅
+            Wait,               // 연결 대기 상태
+            
+            Ready,              // 대기 상태
+            
+            Running,            // 메인 코드 동작
+            
+            Update,             // 펌웨어 업데이트
+            UpdateComplete,     // 펌웨어 업데이트 완료
+            
+            Error,              // 오류
+                
+            EndOfType
+        };
+    }
+    
+}
+```
+
+<br>
+<br>
+
+## <a name="ModeFlight">System::ModeFlight::Type</a>
+비행 제어기 동작 상태를 나타냅니다.
+
+```cpp
+namespace System
+{
+    namespace ModeFlight
+    {
+        enum Type
+        {
+            None = 0,           // 없음
+            
+            Ready,              // 비행 준비
+            
+            TakeOff,            // 이륙 (Flight로 자동전환)
+            Flight,             // 비행
+            Flip,               // 회전           
+            Stop,               // 강제 정지
+            Landing,            // 착륙
+            Reverse,            // 뒤집기
+            
+            Accident,           // 사고 (Ready로 자동전환)
+            Error,              // 오류
+                        
+            EndOfType
+        };
+    }
+    
+}
+```
+
+<br>
+<br>
+
+## <a name="ModeDrive">System::ModeDrive::Type</a>
+자동차 제어기 동작 상태를 나타냅니다.
+
+```cpp
+namespace System
+{
+    namespace ModeDrive
+    {
+        enum Type
+        {
+            None = 0,           // 없음
+            
+            Ready,              // 준비
+            
+            Start,              // 출발
+            Drive,              // 주행
+            Stop,               // 강제 정지
+            
+            Accident,           // 사고 (Ready로 자동전환)
+            Error,              // 오류
+            
+            EndOfType
+        };
+    }
+    
+}
+```
+
+<br>
+<br>
+
+## <a name="SensorOrientation">System::SensorOrientation::Type</a>
+자동차 제어기 동작 상태를 나타냅니다.
+
+```cpp
+namespace System
+{
+    namespace SensorOrientation
+    {
+        enum Type
+        {
+            None = 0,           // 없음
+            
+            Normal,             // 정상
+            ReverseStart,       // 뒤집히기 시작
+            Reversed,           // 뒤집힘
+            
+            EndOfType
+        };
+    }
+    
+}
+```
+
+<br>
+<br>
+
 ## <a name="Coordinate">System::Coordinate::Type</a>
 페트론 조종기 방향 기준을 선택합니다. World는 앱솔루트 모드입니다. 드론 외부 세계를 중심으로 좌표를 판단합니다. Local은 일반모드입니다. 드론을 중심으로 좌표를 판단합니다.<br>
 CommandBase 구조체에서 option 변수에 사용합니다.
