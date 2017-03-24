@@ -222,6 +222,295 @@ namespace Protocol
 - lightModeColor1, lightModeColor2 : [Protocol::LightModeColorBase](ble_protocol_base_structs.md#LightModeColorBase)
 
 <br>
+<br>
+
+## <a name="LightEvent">Protocol::LightEvent</a>
+LED 이벤트 실행 하나를 전달합니다.
+```cpp
+namespace Protocol
+{
+    struct LightEvent
+    {
+        LightEventBase   lightEvent;
+    };
+}
+```
+- lightEvent : [Protocol::LightEventBase](ble_protocol_base_structs.md#LightEventBase)
+
+<br>
+<br>
+
+## <a name="LightEvent2">Protocol::LightEvent2</a>
+LED 이벤트 실행 두 개를 전달합니다.
+```cpp
+namespace Protocol
+{
+    struct LightEvent2
+    {
+        LightEventBase   lightEvent1;
+        LightEventBase   lightEvent2;
+    };
+}
+```
+- lightEvent1, lightEvent2 : [Protocol::LightEventBase](ble_protocol_base_structs.md#LightEventBase)
+
+<br>
+<br>
+
+## <a name="LightEventCommand">Protocol::LightEventCommand</a>
+LED 이벤트 실행 하나와 명령 하나를 전달합니다.
+```cpp
+namespace Protocol
+{
+    struct LightEventCommand
+    {
+        LightEventBase   lightEvent;
+        CommandBase      command;
+    };
+}
+```
+- lightEvent : [Protocol::LightEventBase](ble_protocol_base_structs.md#LightEventBase)
+- command : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
+
+<br>
+<br>
+
+## <a name="LightEventCommandIr">Protocol::LightEventCommandIr</a>
+LED 이벤트 실행 하나와 명령 하나, 그리고 IR 메세지를 전달합니다.
+```cpp
+namespace Protocol
+{
+    struct LightEventCommandIr
+    {
+        LightEventBase   lightEvent;
+        CommandBase      command;
+        u32              irData;
+    };
+}
+```
+- lightEvent : [Protocol::LightEventBase](ble_protocol_base_structs.md#LightEventBase)
+- command : [Protocol::CommandBase](ble_protocol_base_structs.md#CommandBase)
+
+<br>
+<br>
+
+## <a name="LightEventColor">Protocol::LightEventColor</a>
+LED 이벤트 실행 하나를 전달합니다. RGB 값을 직접 지정합니다.
+```cpp
+namespace Protocol
+{
+    struct LightEventColor
+    {
+        LightEventColorBase   lightEventColor;
+    };
+}
+```
+- lightEventColor : [Protocol::LightEventColorBase](ble_protocol_base_structs.md#LightEventColorBase)
+
+<br>
+<br>
+
+## <a name="LightEventColor2">Protocol::LightEventColor2</a>
+LED 이벤트 실행 두 개를 전달합니다. RGB 값을 직접 지정합니다.
+```cpp
+namespace Protocol
+{
+    struct LightEventColor2
+    {
+        LightEventColorBase   lightEventColor1;
+        LightEventColorBase   lightEventColor2;
+    };
+}
+```
+- lightEventColor1, lightEventColor2 : [Protocol::LightEventColorBase](ble_protocol_base_structs.md#LightEventColorBase)
+
+<br>
+<br>
+
+## <a name="LightModeDefaultColor">Protocol::LightModeDefaultColor</a>
+LED 시작 모드를 설정합니다. RGB 값을 직접 지정합니다. 여기서 지정한 값은 드론의 내부 메모리에 저장합니다.
+```cpp
+namespace Protocol
+{
+    struct LightModeDefaultColor
+    {
+        LightModeColorBase   lightModeDefaultColor;
+    };
+}
+```
+- lightModeDefaultColor : [Protocol::LightModeColorBase](ble_protocol_base_structs.md#LightModeColorBase)
+
+<br>
+<br>
+
+## <a name="LightModeDefaultColor2">Protocol::LightModeDefaultColor2</a>
+LED 시작 모드 두 개를 설정합니다. RGB 값을 직접 지정합니다. 여기서 지정한 값은 드론의 내부 메모리에 저장합니다.
+```cpp
+namespace Protocol
+{
+    struct LightModeDefaultColor2
+    {
+        LightModeColorBase   lightModeDefaultColor1;
+        LightModeColorBase   lightModeDefaultColor2;
+    };
+}
+```
+- lightModeDefaultColor1, lightModeDefaultColor2 : [Protocol::LightModeColorBase](ble_protocol_base_structs.md#LightModeColorBase)
+
+<br>
+<br>
+
+## <a name="Address">Protocol::Address</a>
+PETRONE BLE의 주소를 반환합니다.
+```cpp
+namespace Protocol
+{
+    struct Address
+    {
+        u8   address[6];
+    };
+}
+```
+
+<br>
+<br>
+
+## <a name="State">Protocol::State</a>
+PETRONE의 현재 상태값을 반환합니다.
+```cpp
+namespace Protocol
+{
+    struct State
+    {
+        u8          modeVehicle;        ///< 동작 모드
+        
+        u8          modeSystem;         ///< 시스템 모드
+        u8          modeFlight;         ///< 비행 모드
+        u8          modeDrive;          ///< 주행 모드
+        
+        u8          sensorOrientation;  ///< 센서 방향
+        u8          coordinate;         ///< 방위
+        u8          battery;            ///< 배터리량(0 ~ 100)
+    };
+}
+```
+- modeVehicle : [System::ModeVehicle::Type](ble_protocol_definitions.md#ModeVehicle)
+- modeSystem : [System::ModeSystem::Type](ble_protocol_definitions.md#ModeSystem)
+- modeFlight : [System::ModeFlight::Type](ble_protocol_definitions.md#ModeFlight)
+- modeDrive : [System::ModeDrive::Type](ble_protocol_definitions.md#ModeDrive)
+- sensorOrientation : [System::SensorOrientation::Type](ble_protocol_definitions.md#SensorOrientation)
+- coordinate : [System::Coordinate::Type](ble_protocol_definitions.md#Coordinate)
+
+<br>
+<br>
+
+## <a name="Attitude">Protocol::Attitude</a>
+자세값을 반환합니다.
+```cpp
+namespace Protocol
+{
+    struct Attitude
+    {
+        s16          roll;         ///< Roll
+        s16          pitch;        ///< Pitch
+        s16          yaw;          ///< Yaw
+    };
+}
+```
+
+드론의 자세를 확인할 때의 사용 범위는 다음과 같습니다.
+
+|이름      | 형식 | 범위        | 설명                                |
+|:--------:|:----:|:-----------:|:-----------------------------------:|
+| roll     | s16  | -180 ~ 180  | 좌우 기울기 각도                    |
+| pitch    | s16  | -180 ~ 180  | 전후 기울기 각도                    |
+| yaw      | s16  |    0 ~ 360  | 중력 방향을 축으로 회전할 때의 각도 |
+
+
+자이로 센서 데이터를 확인할 때의 사용 범위는 다음과 같습니다.
+
+|이름      | 형식 | 범위            |
+|:--------:|:----:|:---------------:|
+| roll     | s16  | -32768 ~ 32767  |
+| pitch    | s16  | -32768 ~ 32767  |
+| yaw      | s16  | -32768 ~ 32767  |
+
+<br>
+<br>
+
+## <a name="GyroBias">Protocol::GyroBias</a>
+자이로 바이어스 값을 반환합니다.
+```cpp
+namespace Protocol
+{
+    struct GyroBias
+    {
+        s16          roll;         ///< Roll
+        s16          pitch;        ///< Pitch
+        s16          yaw;          ///< Yaw
+    };
+}
+```
+
+<br>
+<br>
+
+## <a name="TrimFlight">Protocol::TrimFlight</a>
+비행 Trim을 조정할 때 사용합니다.
+```cpp
+namespace Protocol
+{
+    struct TrimFlight
+    {
+        s16          roll;         ///< Roll
+        s16          pitch;        ///< Pitch
+        s16          yaw;          ///< Yaw
+        s16          throttle;     ///< Throttle
+    };
+}
+```
+
+<br>
+<br>
+
+## <a name="TrimDrive">Protocol::TrimDrive</a>
+자동차 Trim을 조정할 때 사용합니다.
+```cpp
+namespace Protocol
+{
+    struct TrimDrive
+    {
+        s16          wheel;         ///< Wheel
+    };
+}
+```
+
+<br>
+<br>
+
+## <a name="TrimAll">Protocol::TrimAll</a>
+비행 및 자동차 Trim을 한 번에 조정할 때 사용합니다.
+```cpp
+namespace Protocol
+{
+    struct TrimAll
+    {
+        TrimFlight   flight;
+        TrimDrive    drive;
+    };
+}
+```
+- flight : [Protocol::TrimFlight](#TrimFlight)
+- drive : [Protocol::TrimDrive](#TrimDrive)
+
+
+
+
+
+
+
+
+<br>
 
 ---
 [Home](README.md)
