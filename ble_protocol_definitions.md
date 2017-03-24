@@ -41,8 +41,7 @@ namespace Protocol
     }
 }
 ```
-<br>
----
+
 <br>
 
 ## <a name="ModeVehicle">System::ModeVehicle::Type</a>
@@ -73,7 +72,9 @@ namespace System
 ```
 
 <br>
+
 ---
+
 <br>
 
 
