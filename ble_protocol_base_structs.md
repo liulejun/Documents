@@ -25,6 +25,7 @@ namespace Protocol
 - option : [System::ModeVehicle::Type](ble_protocol_definitions.md#ModeVehicle), [System::Coordinate::Type](ble_protocol_definitions.md#Coordinate), [System::Trim::Type](ble_protocol_definitions.md#Trim),  [System::FlightEvent::Type](ble_protocol_definitions.md#FlightEvent), [Protocol::DataType::Type](ble_protocol_datatype.md#DataType)
 
 <br>
+<br>
 
 ## <a name="LightModeBase">Protocol::LightModeBase</a>
 LED 모드를 변경할 때 사용하는 구조체입니다.
@@ -43,6 +44,7 @@ namespace Protocol
 - color : [Light::Colors::Type](ble_protocol_definitions.md#LightColors)
 
 <br>
+<br>
 
 ## <a name="LightColor">Light::Color</a>
 RGB LED의 색상을 직접 지정할 때 사용하는 구조체입니다.
@@ -58,6 +60,7 @@ namespace Light
 }
 ```
 
+<br>
 <br>
 
 ## <a name="LightModeColorBase">Protocol::LightModeColorBase</a>
@@ -76,6 +79,7 @@ namespace Protocol
 - mode : [Light::Mode::Type](ble_protocol_definitions.md#LightMode)
 - color : [Light::Color](#LightColor)
 
+<br>
 <br>
 
 ## <a name="LightEventBase">Protocol::LightEventBase</a>
@@ -96,6 +100,7 @@ namespace Protocol
 - color : [Light::Colors::Type](ble_protocol_definitions.md#LightColors)
 
 <br>
+<br>
 
 ## <a name="LightEventColorBase">Protocol::LightEventColorBase</a>
 LED 이벤트를 실행할 때 사용하는 구조체입니다. 지정한 횟수만큼 반복 실행 후 기존 실행하던 모드로 복귀합니다. RGB 색상을 직접 지정할 수 있습니다.
@@ -114,6 +119,7 @@ namespace Protocol
 - event : [Light::Mode::Type](ble_protocol_definitions.md#LightMode)
 - color : [Light::Color](#LightColor)
 
+<br>
 <br>
 
 ## <a name="MotorBase">Protocol::MotorBase</a>
