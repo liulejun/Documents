@@ -1,8 +1,6 @@
 
 # PETRONE
 
-## Protocol
-
 1. [Intro](kr/protocol/intro.md)
 2. [Typedef](kr/protocol/typedef.md)
 3. [DataType](kr/protocol/datatype.md)
@@ -13,8 +11,6 @@
 
 
 # PETRONE Link
-
-## Protocol
 
 1. [Intro](kr/protocol/intro.md)
 
