@@ -1,12 +1,9 @@
-*PETRONE*<br>
-Modified : 2017.03.24
-
----
 
 # PETRONE
 
+## Protocol
 
-### Protocol
+1. [Intro](kr/protocol/intro.md)
 2. [Typedef](kr/protocol/typedef.md)
 3. [DataType](kr/protocol/datatype.md)
 4. [Definitions](kr/protocol/definitions.md)
@@ -15,12 +12,15 @@ Modified : 2017.03.24
 7. [Structs - Light](kr/protocol/structs_light.md)
 
 
-### Bluetooth Low Energy
+# PETRONE Link
+
+## Protocol
+
 1. [Intro](kr/protocol/intro.md)
 
 
-### Link
-1. [Intro](kr/protocol/intro.md)
+---
 
+Modified : 2017.03.27
 
 [http://petrone.github.io/Documents/](http://petrone.github.io/Documents/)
