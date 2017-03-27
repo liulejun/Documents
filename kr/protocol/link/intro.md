@@ -15,7 +15,9 @@ Modified : 2017.03.27
 
 
 # 2. 전송 데이터 구조
+
 **LINK** 장치와 통신을 할 때의 데이터 블럭 구성은 다음과 같습니다.
+
 <table>
     <tr>
         <td>0</td>
@@ -62,12 +64,17 @@ Modified : 2017.03.27
 <br>
 
 
-# 3. 데이터 송수신 규칙
+# 3. 사용 시 주의사항
 
-- 데이터를 전송하는 주기는 **Android**인 경우 *50ms*, **iOS**인 경우 *100ms*를 권장
-- PETRONE에 데이터를 요청한 경우엔 요청한 데이터를 응답으로 보냄. 이외의 경우에는 Ack를 응답. Control 명령은 Ack 및 어떤 응답도 보내지 않음
-- 앱에서 드론에 명령 시에는 *DRONE_CONF*에 전달할 데이터를 **Write**
-- 드론이 앱으로 데이터를 보내는 경우엔 *DRONE_DATA*로 **Notify**를 전송
+- LINK 모듈을 제어할 때에는 Petrone에 명령을 보내기 위한 DataType 중 하나인 Command (0x11)를 주로 사용합니다.(PETRONE 문서의 DataType 참조)
+
+- PETRONE 제어와 관련된 부분에 관해서는 PETRONE 문서를 참고하시기 바랍니다. BLE를 통해 전달하는 것과의 차이점은 LINK를 통해 PETRONE을 제어하려고 할 때에는 [Start code + DataType + DataLength + Data + CRC16] 형태로 전송해야 합니다. 반면 BLE를 통해 데이터를 전송할 때에는 [DataType + Data] 형태로 데이터를 전송합니다.
+
+- LINK 모듈에 데이터를 전송하는 경우 몇 가지 명령을 제외하고 대부분 Ack 데이터가 반송됩니다.
+
+- LINK 모듈은 Active 모드일 때 LINK의 동작 모드 변경을 통신으로 알려줍니다.
+
+- 장치 스캔은 1.6초 동안 동작하며 스캔이 끝날 때 까지는 시리얼 통신을 처리하지 못합니다.
 
 
 <br>
