@@ -66,7 +66,7 @@ Modified : 2017.03.27
 
 # 3. 사용 시 주의사항
 
-- LINK 모듈을 제어할 때에는 Petrone에 명령을 보내기 위한 DataType 중 하나인 Command (0x11)를 주로 사용합니다.(PETRONE 문서의 DataType 참조)
+- LINK 모듈을 제어할 때에는 [Command(0x11)](../structs.md#Command)를 주로 사용합니다.
 
 - PETRONE 제어와 관련된 부분에 관해서는 PETRONE 문서를 참고하시기 바랍니다. BLE를 통해 전달하는 것과의 차이점은 LINK를 통해 PETRONE을 제어하려고 할 때에는 [Start code + DataType + DataLength + Data + CRC16] 형태로 전송해야 합니다. 반면 BLE를 통해 데이터를 전송할 때에는 [DataType + Data] 형태로 데이터를 전송합니다.
 
