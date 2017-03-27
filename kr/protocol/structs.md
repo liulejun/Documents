@@ -23,8 +23,10 @@ namespace Protocol
 ```
 - dataType : [Protocol::DataType::Type](datatype.md#DataType)
 
+
 <br>
 <br>
+
 
 ## <a name="Request">Protocol::Request</a>
 PETRONE에 데이터를 요청할 때 사용합니다.
@@ -39,8 +41,10 @@ namespace Protocol
 ```
 - dataType : [Protocol::DataType::Type](datatype.md#DataType)
 
+
 <br>
 <br>
+
 
 ## <a name="Control">Protocol::Control</a>
 PETRONE을 조종할 때 사용하는 입력값입니다.
@@ -67,8 +71,10 @@ Control 입력 값의 범위는 다음과 같습니다. Drive 모드에서는 **
 | yaw      | s8   | -100 ~ 100  | 좌우 회전 | 반시계     | 시계 방향     |
 | throttle | s8   | -100 ~ 100  | 승하강    | 하강       | 상승          |
 
+
 <br>
 <br>
+
 
 ## <a name="Command">Protocol::Command</a>
 명령 하나를 전달합니다.
@@ -83,8 +89,10 @@ namespace Protocol
 ```
 - command : [Protocol::CommandBase](base_structs.md#CommandBase)
 
+
 <br>
 <br>
+
 
 ## <a name="Command2">Protocol::Command2</a>
 명령 두 개를 전달합니다.
@@ -100,8 +108,10 @@ namespace Protocol
 ```
 - command1, command2 : [Protocol::CommandBase](base_structs.md#CommandBase)
 
+
 <br>
 <br>
+
 
 ## <a name="Command3">Protocol::Command3</a>
 명령 세 개를 전달합니다.
@@ -118,8 +128,10 @@ namespace Protocol
 ```
 - command1, command2, command3 : [Protocol::CommandBase](base_structs.md#CommandBase)
 
+
 <br>
 <br>
+
 
 ## <a name="Address">Protocol::Address</a>
 PETRONE BLE의 주소를 반환합니다.
@@ -135,6 +147,7 @@ namespace Protocol
 
 <br>
 <br>
+
 
 ## <a name="State">Protocol::State</a>
 PETRONE의 현재 상태값을 반환합니다.
@@ -162,8 +175,10 @@ namespace Protocol
 - sensorOrientation : [System::SensorOrientation::Type](definitions.md#SensorOrientation)
 - coordinate : [System::Coordinate::Type](definitions.md#Coordinate)
 
+
 <br>
 <br>
+
 
 ## <a name="Attitude">Protocol::Attitude</a>
 자세값을 반환합니다.
@@ -196,8 +211,10 @@ namespace Protocol
 | pitch    | s16  | -32768 ~ 32767  |
 | yaw      | s16  | -32768 ~ 32767  |
 
+
 <br>
 <br>
+
 
 ## <a name="GyroBias">Protocol::GyroBias</a>
 자이로 바이어스 값을 반환합니다.
@@ -215,6 +232,7 @@ namespace Protocol
 
 <br>
 <br>
+
 
 ## <a name="TrimFlight">Protocol::TrimFlight</a>
 비행 Trim을 조정할 때 사용합니다.
@@ -234,6 +252,7 @@ namespace Protocol
 <br>
 <br>
 
+
 ## <a name="TrimDrive">Protocol::TrimDrive</a>
 자동차 Trim을 조정할 때 사용합니다.
 ```cpp
@@ -248,6 +267,7 @@ namespace Protocol
 
 <br>
 <br>
+
 
 ## <a name="TrimAll">Protocol::TrimAll</a>
 비행 및 자동차 Trim을 한 번에 조정할 때 사용합니다.
@@ -264,8 +284,10 @@ namespace Protocol
 - flight : [Protocol::TrimFlight](#TrimFlight)
 - drive : [Protocol::TrimDrive](#TrimDrive)
 
+
 <br>
 <br>
+
 
 ## <a name="CountFlight">Protocol::CountFlight</a>
 비행과 관련된 저장값을 읽을 때 사용합니다.
@@ -286,6 +308,7 @@ namespace Protocol
 <br>
 <br>
 
+
 ## <a name="CountDrive">Protocol::CountDrive</a>
 주행과 관련된 저장값을 읽을 때 사용합니다.
 ```cpp
@@ -301,8 +324,10 @@ namespace Protocol
 ```
 countAccident 변수는 주행 중 충돌을 카운트 하기 위해 만든 변수이나 실제 주행 시 노면이 고르지 못할 때의 충격에 의해서도 카운트가 증가하는 문제가 있습니다. 현재로는 크게 의미가 없는 값으로 생각하시면 됩니다.
 
+
 <br>
 <br>
+
 
 ## <a name="IrMessage">Protocol::IrMessage</a>
 IR 데이터를 전송하는데 사용하거나, PETRONE이 IR 데이터를 수신 받았을 때 외부 장치로 전송하는 데이터입니다.
@@ -318,8 +343,10 @@ namespace Protocol
 ```
 - direction : [System::Direction::Type](definitions.md#Direction)
 
+
 <br>
 <br>
+
 
 ## <a name="ImuRawAndAngle">Protocol::ImuRawAndAngle</a>
 자이로 센서에서 출력한 값과 내부에서 계산한 드론의 자세 값을 반환합니다.
@@ -344,6 +371,7 @@ namespace Protocol
 <br>
 <br>
 
+
 ## <a name="Pressure">Protocol::Pressure</a>
 압력 센서의 출력값을 반환합니다. d1과 d2는 MS5607에서만 출력하는 값으로 DPS310이 사용된 기체에서는 0으로 출력됩니다.
 ```cpp
@@ -362,6 +390,7 @@ namespace Protocol
 <br>
 <br>
 
+
 ## <a name="ImageFlow">Protocol::ImageFlow</a>
 자세 제어에 사용하는 영상 데이터 처리 값입니다.
 ```cpp
@@ -378,6 +407,7 @@ namespace Protocol
 <br>
 <br>
 
+
 ## <a name="Button">Protocol::Button</a>
 버튼 입력 값입니다.
 ```cpp
@@ -393,6 +423,7 @@ namespace Protocol
 <br>
 <br>
 
+
 ## <a name="Motor">Protocol::Motor</a>
 모터를 동작시키거나, 현재 모터에 입력된 값을 확인할 때 사용합니다.
 ```cpp
@@ -401,6 +432,29 @@ namespace Protocol
     struct Motor
     {
         MotorBase motor[4];
+    };
+}
+```
+- motor : [Protocol::MotorBase::Type](base_structs.md#MotorBase)
+
+
+<br>
+<br>
+
+
+## <a name="Range">Protocol::Range</a>
+거리 센서에서 입력받은 거리 값을 반환합니다. 앞으로 거리센서 모듈이 추가될 예정이어서 6방향에 대한 값을 모두 담는 구조체를 사용합니다.
+```cpp
+namespace Protocol
+{
+    struct Range
+    {
+        u16	front;
+        u16	rear;
+        u16	left;
+        u16	right;
+        u16	top;
+        u16	bottom;
     };
 }
 ```

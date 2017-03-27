@@ -92,10 +92,10 @@ namespace Protocol
 {
     struct LinkDiscoveredDevice
     {
-        u8      index;              // index
-        u8      address[6];         // Address of the advertisement or SCAN_RSP
-        u8      name[20];           // Name of the advertisement or SCAN_RSP
-        s8      rssi;               // Advertisement or SCAN_RSP RSSI
+        u8      index;              // 검색한 번호
+        u8      address[6];         // 장치 주소
+        u8      name[20];           // 장치 이름
+        s8      rssi;               // RSSI
     };
 }
 ```
@@ -116,7 +116,7 @@ namespace Protocol
     };
 }
 ```
-PETRONE과 페어링이 필요한 경우에 LinkPasscode를 통해 먼저 페어링 비밀번호를 지정합니다. 이후 장치와 연결할 때 페어링 과정에서 필요한 비밀 번호를 자동으로 입력합니다. 비밀 번호는 플래시 메모리에 저장합니다.
+PETRONE과 페어링이 필요한 경우에 먼저 LinkPasscode를 사용하여 페어링 비밀번호를 설정합니다. 이후 장치와 연결할 때 LINK 모듈이 페어링 과정에서 필요한 비밀 번호를 자동으로 입력합니다. 비밀 번호는 플래시 메모리에 저장합니다.
 
 
 <br>
