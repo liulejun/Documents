@@ -1,5 +1,5 @@
 ***PETRONE / BLE / Protocol / Typedef***<br>
-Modified : 2017.03.24
+Modified : 2017.03.27
 
 ---
 

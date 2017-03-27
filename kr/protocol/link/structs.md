@@ -59,6 +59,7 @@ namespace Protocol
         u8      address[6];         // 장치 주소
     };
 }
+```
 
 - eventLink : [System::EventLink::Type](definitions.md#EventLink)
 
