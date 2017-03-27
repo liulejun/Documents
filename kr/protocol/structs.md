@@ -458,7 +458,7 @@ namespace Protocol
     };
 }
 ```
-- motor : [Protocol::MotorBase::Type](base_structs.md#MotorBase)
+거리센서 출력값의 단위는 millimeter(mm)입니다.
 
 
 <br>
