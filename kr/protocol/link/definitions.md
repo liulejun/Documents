@@ -181,5 +181,27 @@ namespace System
 <br>
 
 ---
+
+### PETRONE
+
+1. [Intro](../intro.md)
+2. [Typedef](../typedef.md)
+3. [DataType](../datatype.md)
+4. [Definitions](../definitions.md)
+5. [Base Structs](../base_structs.md)
+6. [Structs](../structs.md)
+7. [Structs - Light](../structs_light.md)
+
+
+### PETRONE Link
+
+1. [Intro](../intro.md)
+2. [DataType](datatype.md)
+3. ***Definitions***
+4. [Structs](structs.md)
+5. [Examples](examples.md)
+
+<br>
+
 [Home](../../../README.md)
 
