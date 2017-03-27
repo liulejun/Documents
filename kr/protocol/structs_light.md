@@ -1,9 +1,9 @@
 ***PETRONE / BLE / Protocol / Structs / Light***<br>
-Modified : 2017.03.24
+Modified : 2017.03.27
 
 ---
 
-#### 데이터 송수신 시에 사용하는 구조체들을 소개합니다.
+#### LED 제어와 관련된 구조체들을 소개합니다.
 
 ---
 

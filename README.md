@@ -12,7 +12,11 @@
 
 # PETRONE Link
 
-1. [Intro](kr/protocol/intro.md)
+1. [Intro](kr/protocol/link/intro.md)
+2. [DataType](kr/protocol/datatype.md)
+3. [Definitions](kr/protocol/definitions.md)
+4. [Structs](kr/protocol/structs.md)
+
 
 
 ---
