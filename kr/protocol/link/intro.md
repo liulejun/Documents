@@ -129,7 +129,7 @@ LINK 모듈은 시리얼 통신용으로 Silicon Labs사의 CP2104를 사용하�
 
 ### PETRONE Link
 
-1. [Intro](intro.md)
+1. **Intro**
 2. [DataType](datatype.md)
 3. [Definitions](definitions.md)
 4. [Structs](structs.md)
