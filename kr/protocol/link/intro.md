@@ -6,7 +6,7 @@ Modified : 2017.03.27
 <br>
 
 # 1. PETRONE LINK 소개
-**PETRONE LINK**(이하 LINK)는 PETRONE과의 연결 및 제어를 도와주는 통신 모듈입니다. PETRONE과 LINK 사이에는 Bluetooth Low Energy(이하 BLE)를 사용하여 통신하지만, LINK 사용자는 BLE에 대해 신경 쓸 필요 없이 시리얼 통신만으로 PETRONE 과 연결 및 제어를 할 수 있습니다.
+**PETRONE LINK**(이하 LINK)는 PETRONE과의 연결 및 제어를 도와주는 통신 모듈입니다. PETRONE과 LINK 사이에는 Bluetooth Low Energy(이하 BLE)를 사용하여 통신하지만, LINK 사용자는 BLE에 대해 신경 쓸 필요 없이 시리얼 통신만으로 PETRONE과 연결하여 제어할 수 있습니다.
 
 
 <br>
@@ -18,7 +18,7 @@ Modified : 2017.03.27
         <td>0</td>
         <td>1</td>
         <td>2</td>
-        <td>2</td>
+        <td>3</td>
         <td>...</td>
         <td>N-1</td>
         <td>N</td>
@@ -47,28 +47,14 @@ Modified : 2017.03.27
 <br>
 
 
-<table>
-    <tr>
-        <td>영역</td>
-        <td>설명</td>
-    <tr>
-    <tr>
-        <td>Start code</td>
-        <td>데이터 전송 시작을 알림</td>
-    <tr>
-    <tr>
-        <td>Header</td>
-        <td>헤더 뒤에 이어지는 데이터의 형식과 길이</td>
-    <tr>
-    <tr>
-        <td>Data</td>
-        <td>전송할 데이터</td>
-    <tr>
-    <tr>
-        <td>CRC16</td>
-        <td>Header와 Data가 정상적으로 전달되었는지 판별<br>http://www.menie.org/georges/embedded/crc16.html</td>
-    <tr>
-</table>
+|영역        | 설명                                                                                                |
+|:----------:|:---------------------------------------------------------------------------------------------------:|
+| Start code | 데이터 전송 시작을 알림                                                                             |
+| Header     | 헤더 뒤에 이어지는 데이터의 형식과 길이                                                             |
+| Data       | 전송할 데이터                                                                                       |
+| CRC16      | >Header와 Data가 정상적으로 전달되었는지 판별<br>http://www.menie.org/georges/embedded/crc16.html   |
+
+
 
 <br>
 <br>
