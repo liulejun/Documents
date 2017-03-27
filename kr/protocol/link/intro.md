@@ -100,7 +100,7 @@ Modified : 2017.03.27
 
 LINK 모듈은 시리얼 통신용으로 Silicon Labs사의 CP2104를 사용하고 있습니다. 윈도우에서 자동으로 USB 드라이버를 설치하지 못할 경우, 아래의 사이트를 방문하여 OS에 맞는 드라이버를 받아서 설치하시기 바랍니다.
 
-https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx
+[CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx)
 
 <br>
 
