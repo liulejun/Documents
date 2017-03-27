@@ -9,7 +9,6 @@ Modified : 2017.03.27
 
 <br>
 
-
 ## <a name="CommandType">Protocol::CommandType::Type</a>
 기존 PETRONE의 명령 타입에 LINK용 명령들을 추가하여 사용합니다.
 
@@ -32,7 +31,7 @@ namespace Protocol
         };
     }
 }
-
+```
 
  - [Protocol::CommandType::Type](../definitions.md#CommandType)
 
@@ -98,13 +97,9 @@ namespace System
 ```
 
 초기 상태는 Mute이며, 이 때 아두이노 장치에 펌웨어를 다운로드 할 수 있습니다. Active와 Passive는 PETRONE과 통신을 할 수 있는 상태입니다. Mute 상태일 때 Active모드로 전환하는 명령을 아두이노 장치에서 LINK로 전송하면, LINK 모듈이 Active 모드로 전환되어 페트론과 연결할 수 있는 상태가 됩니다. Active 또는 Passive 상태인 경우 아두이노 장치에 펌웨어 다운로드를 시작하면 처음 전송되는 2바이트를 확인하여 Mute 모드로 자동 전환합니다.
-
 <br>
-
 버튼을 5초 이상 연속으로 누르고 있으면 초기 모드가 변경됩니다. 초기 모드가 Mute인 경우 Passive로, Passive인 경우 Mute로 변경됩니다. 초기 모드 선택은 플래시 메모리에 저장되어 다음 번 전원 연결시에도 기존에 선택한 모드를 유지합니다.
-
 <br>
-
 버튼을 한 번 누를 때마다 Mute -> Passive, Passive -> Mute로 모드가 바뀝니다. 
 
 
@@ -181,6 +176,9 @@ namespace System
     }
 }
 ```
+
+
+<br>
 
 ---
 [Home](../../../README.md)

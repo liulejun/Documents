@@ -12,11 +12,8 @@ Modified : 2017.03.27
 ## PETRONE LINK
 
 PETRONE LINK는 PETRONE의 통신 프로토콜을 확장하여 사용하고 있습니다.
-
 <br>
-
 기본적으로 PETRONE을 제어하는 데 사용하는 COMMAND 명령을 통해 LINK를 제어합니다. LINK를 제어하는 명령들은 PETRONE에는 전달되지 않으며, 그 외의 데이터는 LINK가 양쪽의 통신을 중계합니다.
-
 <br>
 
 ## <a name="DataType">Protocol::DataType::Type</a>
@@ -30,12 +27,12 @@ namespace Protocol
         enum Type
         {
             // LINK 모듈
-            LinkState = 0xE0,			// 링크 모듈의 상태
-            LinkEvent,					// 링크 모듈의 이벤트
-            LinkEventAddress,			// 링크 모듈의 이벤트 + 주소
-            LinkRssi,					// 링크와 연결된 장치의 RSSI값
-            LinkDiscoveredDevice,		// 검색된 장치
-            LinkPasscode,				// 페어링 시 필요한 Passcode 설정
+            LinkState = 0xE0,       // 링크 모듈의 상태
+            LinkEvent,              // 링크 모듈의 이벤트
+            LinkEventAddress,       // 링크 모듈의 이벤트 + 주소
+            LinkRssi,               // 링크와 연결된 장치의 RSSI값
+            LinkDiscoveredDevice,   // 검색된 장치
+            LinkPasscode,           // 페어링 시 필요한 Passcode 설정
         };
     }
 }
