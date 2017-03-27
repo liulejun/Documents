@@ -55,4 +55,5 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
 <br>
 
 ---
-[Home](../../README.md)
+[Home](../../../README.md)
+
