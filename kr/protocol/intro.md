@@ -7,9 +7,8 @@ Modified : 2017.03.28
 
 # 1. Bluetooth Low Energy(Bluetooth SMART)
 
-**PETRONE**은 무선 연결에 Bluetooth Low Energy(이하 BLE)를 사용합니다.<br>
-BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽거나, 통지하는 방법을 사용합니다.
-
+**PETRONE**은 무선 연결에 Bluetooth Low Energy(이하 BLE)를 사용합니다.
+<br>
 **PETRONE**에서 사용하는 **Service**와 **Characteristic**은 다음과 같습니다.
 
 | Service | Characteristic | UUID | 데이터 이동 방향 |
@@ -50,7 +49,6 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
 - PETRONE에 데이터를 요청한 경우엔 요청한 데이터를 응답으로 보냄. 이외의 경우에는 Ack를 응답. Control 명령은 Ack 및 어떤 응답도 보내지 않음
 - 앱에서 드론에 명령 시에는 *DRONE_CONF*에 전달할 데이터를 **Write**
 - 드론이 앱으로 데이터를 보내는 경우엔 *DRONE_DATA*로 **Notify**를 전송
-
 
 
 <br>

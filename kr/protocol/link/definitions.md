@@ -87,8 +87,8 @@ namespace System
             None = 0,       // 없음
             
             Mute,           // 데이터 송신 중단 - LED 노란색 Dimming
-            Active,         // 요청한 데이터 이외에도 능동적으로 데이터 전송
-            Passive,        // 요청한 데이터에 대해서만 응답 - 상태 변경 시 상태 데이터 전송 없음, 연결 등의 상황에서는 진행 상황 전송
+            Active,         // 요청 데이터 및 전체 이벤트 데이터 전송
+            Passive,        // 요청 데이터 및 중요 이벤트 데이터만 전송
             
             EndOfType
         };
