@@ -136,7 +136,7 @@ PETRONE과 페어링이 필요한 경우에 먼저 LinkPasscode를 사용하여 
 
 ### PETRONE Link
 
-1. [Intro](../intro.md)
+1. [Intro](intro.md)
 2. [DataType](datatype.md)
 3. [Definitions](definitions.md)
 4. ***Structs***

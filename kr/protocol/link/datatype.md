@@ -59,7 +59,7 @@ namespace Protocol
 
 ### PETRONE Link
 
-1. [Intro](../intro.md)
+1. [Intro](intro.md)
 2. ***DataType***
 3. [Definitions](definitions.md)
 4. [Structs](structs.md)

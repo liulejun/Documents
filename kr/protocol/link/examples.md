@@ -567,7 +567,7 @@ PETRONE과 연결된 경우, 아래의 명령을 보내면 프로펠러 쪽 LED�
 
 ### PETRONE Link
 
-1. [Intro](../intro.md)
+1. [Intro](intro.md)
 2. [DataType](datatype.md)
 3. [Definitions](definitions.md)
 4. [Structs](structs.md)
