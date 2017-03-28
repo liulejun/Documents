@@ -1,5 +1,5 @@
 ***PETRONE / BLE / Protocol / Intro***<br>
-Modified : 2017.03.27
+Modified : 2017.03.28
 
 ---
 
@@ -12,11 +12,11 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
 
 **PETRONE**에서 사용하는 **Service**와 **Characteristic**은 다음과 같습니다.
 
-| Service        | Characteristic | UUID                                   | 데이터 이동 방향      |
+| Service | Characteristic | UUID | 데이터 이동 방향 |
 |:--------------:|:--------------:|:--------------------------------------:|:---------------------:|
-| DRONE_SERVICE  |                | *C320DF00-7891-11E5-8BCF-FEFF819CDC9F* |                       |
-|   ├           | DRONE_DATA     | *C320DF01-7891-11E5-8BCF-FEFF819CDC9F* | 드론 → 앱 (*Notify*) |
-|   └           | DRONE_CONF     | *C320DF02-7891-11E5-8BCF-FEFF819CDC9F* | 앱 → 드론 (*Write*)  |
+| DRONE_SERVICE | | *C320DF00-7891-11E5-8BCF-FEFF819CDC9F* | |
+| ├ | DRONE_DATA | *C320DF01-7891-11E5-8BCF-FEFF819CDC9F* | 드론 → 앱 (*Notify*) |
+| └ | DRONE_CONF | *C320DF02-7891-11E5-8BCF-FEFF819CDC9F* | 앱 → 드론 (*Write*) |
 
 <br>
 <br>
@@ -32,8 +32,8 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
         <td>N</td>
     </tr>
     <tr>
-        <td>DataType</td>
-        <td colspan="5">Data</td>
+        <td><div align="center">DataType</div></td>
+        <td colspan="5"><div align="center">Data</div></td>
     </tr>
 </table>
 
