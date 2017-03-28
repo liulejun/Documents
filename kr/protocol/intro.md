@@ -13,7 +13,7 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
 **PETRONE**에서 사용하는 **Service**와 **Characteristic**은 다음과 같습니다.
 
 | Service | Characteristic | UUID | 데이터 이동 방향 |
-|:--------------:|:--------------:|:--------------------------------------:|:---------------------:|
+|:---:|:---:|:---:|:---:|
 | DRONE_SERVICE | | *C320DF00-7891-11E5-8BCF-FEFF819CDC9F* | |
 | ├ | DRONE_DATA | *C320DF01-7891-11E5-8BCF-FEFF819CDC9F* | 드론 → 앱 (*Notify*) |
 | └ | DRONE_CONF | *C320DF02-7891-11E5-8BCF-FEFF819CDC9F* | 앱 → 드론 (*Write*) |
@@ -24,12 +24,12 @@ BLE는 장치 간 데이터 교환 시 Characteristic에 값을 쓰거나, 읽�
 # 2. 전송 데이터 구조
 <table>
     <tr>
-        <td>0</td>
-        <td>1</td>
-        <td>2</td>
-        <td>...</td>
-        <td>N-1</td>
-        <td>N</td>
+        <td><div align="center">0</div></td>
+        <td><div align="center">1</div></td>
+        <td><div align="center">2</div></td>
+        <td><div align="center">...</div></td>
+        <td><div align="center">N-1</div></td>
+        <td><div align="center">N</div></td>
     </tr>
     <tr>
         <td><div align="center">DataType</div></td>
