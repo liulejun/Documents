@@ -96,7 +96,7 @@ namespace System
 }
 ```
 
-버튼을 한 번 누를 때마다 Mute -> Passive, Passive -> Mute로 모드가 바뀝니다. 
+버튼을 한 번 누를 때마다 ***Mute -> Passive***, ***Passive -> Mute***로 모드가 바뀝니다. 
 <br>
 
 버튼을 5초 이상 연속으로 누르고 있으면 초기 모드가 변경됩니다. 초기 모드가 Mute인 경우 Passive로, Passive인 경우 Mute로 변경됩니다. 초기 모드 선택은 플래시 메모리에 저장되어 다음 번 전원 연결시에도 기존에 선택한 모드를 유지합니다.

@@ -30,7 +30,7 @@ Modified : 2017.03.28
     </tr>
     <tr>
         <td rowspan="2" colspan="2"><div align="center">Start code</div></td>
-        <td colspan="2"><div align="center"Header</div></td>
+        <td colspan="2"><div align="center">Header</div></td>
         <td rowspan="2"><div align="center">Data</div></td>
         <td rowspan="2" colspan="2"><div align="center">CRC16</div></td>
     </tr>
@@ -39,8 +39,8 @@ Modified : 2017.03.28
         <td><div align="center">Length</div></td>
     </tr>
     <tr>
-        <td><div align="center">N</div>0x0A</td>
-        <td><div align="center">N</div>0x55</td>
+        <td><div align="center">0x0A</div></td>
+        <td><div align="center">0x55</div></td>
         <td><div align="center">-</div></td>
         <td><div align="center">-</div></td>
         <td><div align="center">-</div></td>
@@ -91,7 +91,7 @@ Data 영역과 CRC16 영역 모두 Little Endian을 사용하고 있습니다. L
 
 
 |영역 | 설정값 |
-|:---|:---|
+|:---:|:---:|
 | Baud Rate | 115200 |
 | Parity | None      |
 | Data Bits | 8 |
