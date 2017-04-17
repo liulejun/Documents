@@ -1,5 +1,5 @@
 ***PETRONE / BLE / Protocol / Structs***<br>
-Modified : 2017.03.28
+Modified : 2017.04.17
 
 ---
 
@@ -449,10 +449,10 @@ namespace Protocol
 {
     struct Range
     {
-        u16	front;
-        u16	rear;
         u16	left;
+        u16	front;
         u16	right;
+        u16	rear;
         u16	top;
         u16	bottom;
     };
