@@ -1,7 +1,8 @@
 
-# BYROBOT PETRONE Common packet class and structs sample source code.
+# BYROBOT PETRONE 
+# Common packet class and structs sample  code.
 
-Bluetooth packet block : ToTransferDataBlock() ( * packet block length = GetSize() + 1)
+Bluetooth packet block : ToTransferDataBlock() ( * packet block length = GetSize() + 1)<br>
 FPV(Wifi) packet block : ToTransferDataBlockWifi() ( * packet block length = GetSize() + 6)
 
 [Android bluetooth JNI sample](android/java/bluetooth.cpp)
