@@ -14,7 +14,7 @@ namespace ByrobotProtocol {
     {
         enum Enum
         {
-            None = 0,                   ///< 없음
+            None = 0,                   ///< None
             
             // 시스템 정보
             Ping,                       ///< 통신 확인(reserve)
@@ -61,24 +61,18 @@ namespace ByrobotProtocol {
             
             
             // 데이터 송수신
-            IrMessage = 0x40,           ///< IR 데이터 송수신
+            IrMessage = 0x40,           ///< IR Data
             
             
             // 센서 및 제어
             ImuRawAndAngle = 0x50,      ///< IMU Raw + Angle
-            Pressure,                   // 압력 센서 데이터
+            Pressure,                   // Pressure sensor
             ImageFlow,                  // ImageFlow
-            Button,                     // 버튼 입력
-            Battery,                    // 배터리
-            Motor,                      // 모터 제어 및 현재 제어값 확인
-            Temperature,                // 온도 데이터
-            Range,                      // 거리 센서
-            
-            // 펌웨어 업데이트
-            UpdateLookupTarget = 0x90,  ///< 업데이트 대상 장치 검색
-            UpdateInformation,          ///< 업데이트 정보
-            Update,                     ///< 업데이트(16바이트 단위)
-            UpdateLocationCorrect,      ///< 업데이트 위치 정정
+            Button,                     // Button Input
+            Battery,                    // Battery sStatus
+            Motor,                      // Motor staus
+            Temperature,                // Temperature
+            Range,                      // Range sensor
             
             EndOfType
         };
